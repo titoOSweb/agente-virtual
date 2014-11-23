@@ -1,0 +1,131 @@
+#capa{
+	/*transition*/
+	 margin: 20px;
+    border: 5px solid #eee;
+    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+#capa:hover{
+	 -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+}
+
+#capa1{
+	/*transition*/
+	 margin: 20px;
+    border: 5px solid #eee;
+    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+#capa1:hover{
+	 -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+}
+#letra:hover{
+	color:white;
+}
+
+/* 06-07-2014 */
+.btn-green{
+	background-color:#16a085; 
+	border:none;
+}
+
+.btn-green:hover{
+	background-color: #1abc9c;
+}
+
+.container{
+	background-color:rgba(226, 223, 223, 0.13);
+	margin-top: 10px;
+}
+
+.header{
+	background-color: rgb(0, 177, 255); 
+	border-radius:10px;
+}
+
+.header h1{
+	color: white;
+	font-weight: bold;
+}
+
+.margin-top{
+	margin-top: 15px;
+}
+
+p.text-caption{
+	margin: 10px 0;
+	text-indent: justify;
+	min-height: 115px;
+	font-size: 1.2em;
+}
+
+.e-container{
+	border-radius:10px;
+}
+
+/* 07 07 2014 */
+
+.overflow{
+	max-height: 200px !important;
+	overflow:  scroll !important;
+}
+
+.caja {
+position: relative; /*Para poder ubicar la info dentro de la caja*/
+}
+
+.info {
+position:absolute; /*Info sobre la imagen*/
+top: 0%;
+left: 0%; /*Desplazamos a partir de la esquina superior izquierda*/
+filter: alpha(opacity=0); /*Opacidad Para IE */
+opacity: 0; /*Inicialmente transparente */
+text-align: center;
+color: white;
+width:100%;
+height: 100%;
+background: black;
+border-radius: 3px;
+-moz-transition:all ease .6s; /*Aplicamos una ligera transición*/
+-webkit-transition:all ease .6s ;
+transition:all ease .6s;
+}
+.caja:hover .info {
+filter: alpha(opacity=80);
+opacity: 1; /*Al hacer hover sobre la caja hacemos visible los datos*/
+}
+
+.img{
+width:100%;
+height:93%;
+position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: none;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+}
+
+.tab{
+text-align: center;
+ 
+}
+
+.im{
+  width:100%;
+}
