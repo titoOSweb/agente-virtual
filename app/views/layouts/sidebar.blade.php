@@ -33,7 +33,7 @@
 					<div class="nicdark_space20"></div>
 
 					<div class="nicdark_logo nicdark_marginleft10">
-						<a href="/"><img alt="" src="img/logo.png"></a>
+						<a href="/"><img alt="" src="/img/logo.png"></a>
 					</div>
 
 
@@ -49,7 +49,7 @@
 								<ul class="sub-menu">
 									<li class="mm_grid mm_grid_6">
 										<ul class="sub-menu">
-											<li><a href="#">Aprende el abecedario</a></li>
+											<li><a href="/primer-grado/aprende-el-abecedario">Aprende el abecedario</a></li>
 											<li><a href="#">Aprende los números</a></li>
 											<li><a href="#">Adivina la palabra</a></li>
 											<li><a href="#">Camino de letras</a></li>

@@ -13,11 +13,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--meta responsive-->
 
 	<!--START CSS--> 
-	<link rel="stylesheet" href="css/nicdark_style.css"> <!--style-->
-	<link rel="stylesheet" href="css/nicdark_responsive.css"> <!--nicdark_responsive-->
+	<link rel="stylesheet" href="/css/nicdark_style.css"> <!--style-->
+	<link rel="stylesheet" href="/css/nicdark_responsive.css"> <!--nicdark_responsive-->
 
 	<!--revslider-->
-	<link rel="stylesheet" href="css/revslider/settings.css"> <!--revslider-->
+	<link rel="stylesheet" href="/css/revslider/settings.css"> <!--revslider-->
 
 	<!--END CSS-->
 
@@ -56,83 +56,11 @@
 		@include('layouts.sidebar')
 		
 		<!--start-->
-		<!--start section-->
-		<section class="nicdark_section">
 
-			<div class="tp-banner-container">
-				<div class="nicdark_slide1" >
+		@yield('content')
 
-					<ul>
-
-
-						<!--start first-->
-						<li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"  data-title="FRIENDS">
-							<img src="img/slide/img3.jpg"  alt="" data-lazyload="img/slide/img3.jpg" data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
-						</li>
-						<!--end first-->
-
-
-						<!--start second-->
-						<li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on"  data-title="LESSON">
-							<img src="img/slide/img8.jpg"  alt="" data-lazyload="img/slide/img8.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-						</li>
-						<!--end second-->
-
-					</ul>
-
-				</div>
-			</div>
-
-		</section>
-		<!--end section--><!--start section-->
-		{{--<section class="nicdark_section nicdark_margintop45_negative">
-
-			<!--start nicdark_container-->
-			<div class="nicdark_container nicdark_clearfix">
-
-				<div class="grid grid_12 percentage nomargin">    
-					<div class="nicdark_textevidence center">
-						<div class="nicdark_textevidence nicdark_width_percentage25 nicdark_bg_blue nicdark_shadow nicdark_radius_left">
-							<div class="nicdark_textevidence">
-								<div class="nicdark_margin30">
-									<h2 class="white subtitle"><a class="white" href="courses.php">COURSES</a></h2>
-								</div>
-								<i class="nicdark_zoom icon-pencil-2 nicdark_iconbg left extrabig blue nicdark_displaynone_ipadland nicdark_displaynone_ipadpotr"></i>
-							</div>
-						</div>
-						<div class="nicdark_textevidence nicdark_width_percentage25 nicdark_bg_yellow nicdark_shadow">
-							<div class="nicdark_textevidence">
-								<div class="nicdark_margin30">
-									<h2 class="white subtitle"><a class="white" href="prices.php">PRICES</a></h2>
-								</div>
-								<i class="nicdark_zoom icon-money-1 nicdark_iconbg left extrabig yellow nicdark_displaynone_ipadland nicdark_displaynone_ipadpotr"></i>
-							</div>
-						</div>
-						<div class="nicdark_textevidence nicdark_width_percentage25 nicdark_bg_orange nicdark_shadow">
-							<div class="nicdark_textevidence">
-								<div class="nicdark_margin30">
-									<h2 class="white subtitle"><a class="white" href="events.php">EVENTS</a></h2>
-								</div>
-								<i class="nicdark_zoom icon-music-2 nicdark_iconbg left extrabig orange nicdark_displaynone_ipadland nicdark_displaynone_ipadpotr"></i>
-							</div>
-						</div>
-						<div class="nicdark_textevidence nicdark_width_percentage25 nicdark_bg_green nicdark_shadow nicdark_radius_right">
-							<div class="nicdark_textevidence">
-								<div class="nicdark_margin30">
-									<h2 class="white subtitle"><a class="white" href="teachers.php">TEACHERS</a></h2>
-								</div>
-								<i class="nicdark_zoom icon-graduation-cap-1 nicdark_iconbg left extrabig green nicdark_displaynone_ipadland nicdark_displaynone_ipadpotr"></i>
-							</div>
-						</div>
-						<div class="nicdark_space5"></div>
-					</div>
-				</div>
-
-			</div>
-			<!--end nicdark_container-->
-
-		</section>
-		<!--end section-->--}}
+		<!--end-->
+		
 	
 		@include('layouts.footer')
 		
@@ -140,30 +68,30 @@
 </div>
 
 <!--main-->
-<script src="js/main/jquery.min.js"></script> <!--Jquery-->
-<script src="js/main/jquery-ui.js"></script> <!--Jquery UI-->
-<script src="js/main/excanvas.js"></script> <!--canvas need for ie-->
+<script src="/js/main/jquery.min.js"></script> <!--Jquery-->
+<script src="/js/main/jquery-ui.js"></script> <!--Jquery UI-->
+<script src="/js/main/excanvas.js"></script> <!--canvas need for ie-->
 
 <!--plugins-->
-<script src="js/plugins/revslider/jquery.themepunch.tools.min.js"></script> <!--revslider-->
-<script src="js/plugins/revslider/jquery.themepunch.revolution.min.js"></script> <!--revslider-->
+<script src="/js/plugins/revslider/jquery.themepunch.tools.min.js"></script> <!--revslider-->
+<script src="/js/plugins/revslider/jquery.themepunch.revolution.min.js"></script> <!--revslider-->
 
 <!--menu-->
-<script src="js/plugins/menu/superfish.min.js"></script> <!--superfish-->
-<script src="js/plugins/menu/tinynav.min.js"></script> <!--tinynav-->
+<script src="/js/plugins/menu/superfish.min.js"></script> <!--superfish-->
+<script src="/js/plugins/menu/tinynav.min.js"></script> <!--tinynav-->
 
 <!--other-->
-<script src="js/plugins/isotope/isotope.pkgd.min.js"></script> <!--isotope-->
-<script src="js/plugins/mpopup/jquery.magnific-popup.min.js"></script> <!--mpopup-->
-<script src="js/plugins/scroolto/scroolto.js"></script> <!--Scrool To-->
-<script src="js/plugins/nicescrool/jquery.nicescroll.min.js"></script> <!--Nice Scroll-->
-<script src="js/plugins/inview/jquery.inview.min.js"></script> <!--inview-->
-<script src="js/plugins/parallax/jquery.parallax-1.1.3.js"></script> <!--parallax-->
-<script src="js/plugins/countto/jquery.countTo.js"></script> <!--jquery.countTo-->
-<script src="js/plugins/countdown/jquery.countdown.js"></script> <!--countdown-->
+<script src="/js/plugins/isotope/isotope.pkgd.min.js"></script> <!--isotope-->
+<script src="/js/plugins/mpopup/jquery.magnific-popup.min.js"></script> <!--mpopup-->
+<script src="/js/plugins/scroolto/scroolto.js"></script> <!--Scrool To-->
+<script src="/js/plugins/nicescrool/jquery.nicescroll.min.js"></script> <!--Nice Scroll-->
+<script src="/js/plugins/inview/jquery.inview.min.js"></script> <!--inview-->
+<script src="/js/plugins/parallax/jquery.parallax-1.1.3.js"></script> <!--parallax-->
+<script src="/js/plugins/countto/jquery.countTo.js"></script> <!--jquery.countTo-->
+<script src="/js/plugins/countdown/jquery.countdown.js"></script> <!--countdown-->
 
 <!--settings-->
-<script src="js/settings.js"></script> <!--settings-->
+<script src="/js/settings.js"></script> <!--settings-->
 <!--custom js-->
 <script type="text/javascript">
 jQuery(document).ready(function() {

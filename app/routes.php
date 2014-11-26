@@ -15,3 +15,13 @@ Route::get('/', function()
 {
 	return View::make('home');
 });
+
+
+#Primer Grado
+
+Route::get('/primer-grado/aprende-el-abecedario', function()
+{
+	return View::make('primer-grado.aprende-el-abecedario');
+});
+
+
