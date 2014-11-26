@@ -4,58 +4,21 @@
 
 		<div class="nicdark_section nicdark_bg_greydark nicdark_displaynone_responsive">
 			<div class="nicdark_container nicdark_clearfix">
-				
+				<div class="grid grid_6">
+					<div class="nicdark_focus">
+						
+					</div>
+				</div>
 				<div class="grid grid_6 right">
 					<div class="nicdark_focus right">
 						<h6 class="white">
 							
 							<i class="icon-plus-outline"></i>&nbsp;&nbsp;<a class="white nicdark_mpopup_ajax" href="form-register.php">REGISTRO</a>
 							&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">·</span>&nbsp;&nbsp;&nbsp;&nbsp;
-							<i class="icon-lock-1"></i>&nbsp;&nbsp;<a class="white nicdark_mpopup_ajax" href="form-login.php">LOG IN</a>
+							<i class="icon-lock-1"></i>&nbsp;&nbsp;<a class="white nicdark_mpopup_ajax" href="form-login.php">ACCEDER</a>
 						</h6>
 					</div>
 				</div>
-
-				<!--info window for languages-->
-				<div id="nicdark_window" class="nicdark_bg_white nicdark_radius zoom-anim-dialog mfp-hide">
-
-					<div class="nicdark_textevidence nicdark_bg_red nicdark_radius_top">
-						<div class="nicdark_margin20">
-							<h4 class="white">LANGUAGES</h4>
-						</div>
-					</div>
-
-					<div class="nicdark_margin20">
-
-						<ul class="nicdark_list border">
-
-							<li class="nicdark_border_grey">
-								<p><a class="grey" href="/">ENGLISH</a><a href="/" class="nicdark_btn right nicdark_opacity"><img alt="" width="30" src="img/flag/img1.png"></a></p>
-								<div class="nicdark_space15"></div>
-							</li>
-
-							<li class="nicdark_border_grey">
-								<div class="nicdark_space15"></div>
-								<p><a class="grey" href="/">RUSSIAN</a><a href="/" class="nicdark_btn right nicdark_opacity"><img alt="" width="30" src="img/flag/img2.png"></a></p>   
-								<div class="nicdark_space15"></div>
-							</li>
-
-							<li class="nicdark_border_grey">
-								<div class="nicdark_space15"></div>
-								<p><a class="grey" href="/">ARABIC</a><a href="/" class="nicdark_btn right nicdark_opacity"><img alt="" width="30" src="img/flag/img3.png"></a></p>   
-								<div class="nicdark_space15"></div>
-							</li>
-
-							<li class="nicdark_border_grey">
-								<div class="nicdark_space15"></div>
-								<p><a class="grey" href="/">ITALIAN</a><a href="/" class="nicdark_btn right nicdark_opacity"><img alt="" width="30" src="img/flag/img4.png"></a></p>    
-							</li>
-
-						</ul>
-
-					</div>
-				</div>
-				<!--end window-->
 
 			</div>
 		</div>
@@ -78,12 +41,7 @@
 						<ul class="nicdark_menu nicdark_margin010 nicdark_padding50">
 
 							<li class="orange">
-								<a href="/">INICIO</a>
-								<ul class="sub-menu">
-									<li><a href="/">Home Default</a></li>
-									<li><a href="index-2.php">Color Sections</a></li>
-									<li><a href="index-3.php">Boxed Version</a></li>
-								</ul>
+								<a href="/">INICIO</a>								
 							</li>
 
 							<li class="yellow nicdark_megamenu">
