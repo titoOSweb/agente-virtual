@@ -45,116 +45,70 @@
 							</li>
 
 							<li class="yellow nicdark_megamenu">
-								<a href="index.html#">PRIMER GRADO</a>
+								<a href="#">PRIMER GRADO</a>
 								<ul class="sub-menu">
-									<li class="mm_grid mm_grid_3">
-										<a href="shop.php">SHOP PAGES</a>
+									<li class="mm_grid mm_grid_6">
 										<ul class="sub-menu">
-											<li><a href="shop-cart.php">Cart Page</a></li>
-											<li><a href="shop-checkout.php">Checkout Page</a></li>
-											<li><a href="single-product.php">Single Product</a></li>
+											<li><a href="#">Aprende el abecedario</a></li>
+											<li><a href="#">Aprende los números</a></li>
+											<li><a href="#">Adivina la palabra</a></li>
+											<li><a href="#">Camino de letras</a></li>
 										</ul>
 									</li>
-									<li class="mm_grid mm_grid_3">
-										<a href="index.html#">DEDICATED PAGES</a>
+									
+									<li class="mm_grid mm_grid_6">
 										<ul class="sub-menu">
-											<li><a href="single-course.php">Single Course</a></li>
-											<li><a href="single-excursion.php">Single Excursion</a></li>
-											<li><a href="single-event.php">Single Event</a></li>
+											<li><a href="#">Aprende las formas geometricas</a></li>
+											<li><a href="#">Conoce las partes del computador</a></li>
+											<li><a href="#">Formando palabras</a></li>
+											<li><a href="#">Figuras + Letras</a></li>
 										</ul>
-									</li>
-									<li class="mm_grid mm_grid_3">
-										<a href="components.php">COMPONENTS</a>
-										<ul class="sub-menu">
-											<li><a href="components.php">Jquery Components</a></li>
-											<li><a href="components.php">Basic Components</a></li>
-											<li><a href="components.php">All Components</a></li>
-										</ul>
-									</li>
-									<li class="mm_grid mm_grid_3">
-										<a href="index.html#">SPECIAL PAGES</a>
-										<ul class="sub-menu">
-											<li><a href="prices.php">Prices Page</a></li>
-											<li><a href="teachers.php">Teachers Page</a></li>
-											<li><a href="faq.php">Faq Page</a></li>
-										</ul>
-									</li>
+									</li>									
 								</ul>
 							</li>
 							
 							<li class="blue nicdark_megamenu">
-								<a href="index.html#">SEGUNDO GRADO</a>
+								<a href="#">SEGUNDO GRADO</a>
 								<ul class="sub-menu">
-									<li class="mm_grid mm_grid_3">
-										<a href="shop.php">SHOP PAGES</a>
+									<li class="mm_grid mm_grid_6">
 										<ul class="sub-menu">
-											<li><a href="shop-cart.php">Cart Page</a></li>
-											<li><a href="shop-checkout.php">Checkout Page</a></li>
-											<li><a href="single-product.php">Single Product</a></li>
+											<li><a href="#">Singular y Plural</a></li>
+											<li><a href="#">Cada palabra en su lugar</a></li>
+											<li><a href="#">Caminos de flechas</a></li>
+											<li><a href="#">Ordena los números</a></li>
 										</ul>
 									</li>
-									<li class="mm_grid mm_grid_3">
-										<a href="index.html#">DEDICATED PAGES</a>
+									
+									<li class="mm_grid mm_grid_6">
 										<ul class="sub-menu">
-											<li><a href="single-course.php">Single Course</a></li>
-											<li><a href="single-excursion.php">Single Excursion</a></li>
-											<li><a href="single-event.php">Single Event</a></li>
+											<li><a href="#">"Mayor que", "Menor que"</a></li>
+											<li><a href="#">Arrastra los números</a></li>
+											<li><a href="#">A Sumar!</a></li>
+											<li><a href="#">A Restar!</a></li>
 										</ul>
-									</li>
-									<li class="mm_grid mm_grid_3">
-										<a href="components.php">COMPONENTS</a>
-										<ul class="sub-menu">
-											<li><a href="components.php">Jquery Components</a></li>
-											<li><a href="components.php">Basic Components</a></li>
-											<li><a href="components.php">All Components</a></li>
-										</ul>
-									</li>
-									<li class="mm_grid mm_grid_3">
-										<a href="index.html#">SPECIAL PAGES</a>
-										<ul class="sub-menu">
-											<li><a href="prices.php">Prices Page</a></li>
-											<li><a href="teachers.php">Teachers Page</a></li>
-											<li><a href="faq.php">Faq Page</a></li>
-										</ul>
-									</li>
+									</li>									
 								</ul>
 							</li>
 
 							<li class="red nicdark_megamenu">
-								<a href="index.html#">TERCER GRADO</a>
+								<a href="#">TERCER GRADO</a>
 								<ul class="sub-menu">
-									<li class="mm_grid mm_grid_3">
-										<a href="shop.php">SHOP PAGES</a>
+									<li class="mm_grid mm_grid_6">
 										<ul class="sub-menu">
-											<li><a href="shop-cart.php">Cart Page</a></li>
-											<li><a href="shop-checkout.php">Checkout Page</a></li>
-											<li><a href="single-product.php">Single Product</a></li>
+											<li><a href="#">Sustantivos</a></li>
+											<li><a href="#">Dameros</a></li>
+											<li><a href="#">Silabas</a></li>
+											<li><a href="#">Familia de palabras</a></li>
 										</ul>
 									</li>
-									<li class="mm_grid mm_grid_3">
-										<a href="index.html#">DEDICATED PAGES</a>
+									
+									<li class="mm_grid mm_grid_6">
 										<ul class="sub-menu">
-											<li><a href="single-course.php">Single Course</a></li>
-											<li><a href="single-excursion.php">Single Excursion</a></li>
-											<li><a href="single-event.php">Single Event</a></li>
+											<li><a href="#">A Sumar!</a></li>
+											<li><a href="#">A Restar!</a></li>
+											<li><a href="#">A Multiplicar!</a></li>
 										</ul>
-									</li>
-									<li class="mm_grid mm_grid_3">
-										<a href="components.php">COMPONENTS</a>
-										<ul class="sub-menu">
-											<li><a href="components.php">Jquery Components</a></li>
-											<li><a href="components.php">Basic Components</a></li>
-											<li><a href="components.php">All Components</a></li>
-										</ul>
-									</li>
-									<li class="mm_grid mm_grid_3">
-										<a href="index.html#">SPECIAL PAGES</a>
-										<ul class="sub-menu">
-											<li><a href="prices.php">Prices Page</a></li>
-											<li><a href="teachers.php">Teachers Page</a></li>
-											<li><a href="faq.php">Faq Page</a></li>
-										</ul>
-									</li>
+									</li>									
 								</ul>
 							</li>
 

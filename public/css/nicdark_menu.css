@@ -40,7 +40,7 @@
 .nicdark_menu > .orange > .sub-menu li, .nicdark_megamenu.orange ul li ol li a{ border-bottom:1px solid #df764e; }
 .nicdark_menu > .red > .sub-menu li, .nicdark_megamenu.red ul li ol li a{ border-bottom:1px solid #c86969; }
 /*text-dropdowncolor*/
-.nicdark_menu .yellow .sub-menu a, .nicdark_menu .orange .sub-menu a, .nicdark_menu .red .sub-menu a, .nicdark_menu .blue .sub-menu a, .nicdark_menu .green .sub-menu a, .nicdark_menu .violet .sub-menu a, .nicdark_menu .greydark .sub-menu a { color: #fff; }
+.nicdark_menu .yellow .sub-menu a, .nicdark_menu .orange .sub-menu a, .nicdark_menu .red .sub-menu a, .nicdark_menu .blue .sub-menu a, .nicdark_menu .green .sub-menu a, .nicdark_menu .violet .sub-menu a, .nicdark_menu .greydark .sub-menu a { color: #fff; font-size: 22px;}
 .nicdark_menu .white .sub-menu a, .nicdark_menu .grey .sub-menu a { color: #a4a4a4; }
 /*shadow*/
 .nicdark_menu > .grey .sub-menu li:last-child{ box-shadow: 0px 4px 0px 0px #f1f1f1; }
