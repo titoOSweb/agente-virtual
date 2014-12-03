@@ -52,7 +52,7 @@
 					$index = 0; 
 					$class="nicdark_bg_yellow"; 
 				?>
-				@foreach (range('A', 'Z') as $letra) 
+				@foreach ($letras as $letra) 
 					@if($index == 0)
 						<?php $class="nicdark_bg_green"; ?>				
 					@elseif($index == 1)
@@ -64,7 +64,7 @@
 						<?php $index = -1; ?>					
 					@endif
 
-					<a href="javascript:void();" data-imagen="avion.jpg" class="extrasize nicdark_width50 nicdark_btn {{ $class }} medium nicdark_shadow nicdark_radius white nicdark_margin10">{{ $letra }}</a>
+					<a href="javascript:void(0)" data-imagen="/images/primer-grado/abecedario/{{ $letra['letra'] }}.jpg" data-descripcion="{{ $letra['descripcion'] }}" class="letras-abecedario extrasize nicdark_width50 nicdark_btn {{ $class }} medium nicdark_shadow nicdark_radius white nicdark_margin10">{{ $letra['letra'] }}</a>
 					<?php $index++; ?>
 				@endforeach
 			</div>
@@ -99,3 +99,4 @@
 		</section>
 		<!--end section-->
 		@endsection
+

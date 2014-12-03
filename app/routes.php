@@ -21,7 +21,38 @@ Route::get('/', function()
 
 Route::get('/primer-grado/aprende-el-abecedario', function()
 {
-	return View::make('primer-grado.aprende-el-abecedario');
+	$letras = [
+		["letra" => 'a', 'descripcion' => 'Avion'],
+		["letra" => 'b', 'descripcion' => 'Bebe'],
+		["letra" => 'c', 'descripcion' => 'Casa'],
+		["letra" => 'd', 'descripcion' => 'Dragón'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'e', 'descripcion' => 'Elefante'],
+		["letra" => 'z', 'descripcion' => 'Elefante']
+
+	];
+
+	return View::make('primer-grado.aprende-el-abecedario', compact('letras'));
 });
 
 

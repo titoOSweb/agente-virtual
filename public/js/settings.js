@@ -264,6 +264,21 @@
 		removalDelay: 300,
 		mainClass: 'my-mfp-zoom-in'
 	});
+
+	// From HTML string
+	$('.letras-abecedario').on("click", function(){
+
+		var $img = '<div class="white-popup" align="center"> <h1 class="nicdark_btn nicdark_bg_gray extrasize nicdark_radius nicdark_shadow white">'+ $(this).data('descripcion') + '</h1> <br/> <img width="350" src="'+ $(this).data('imagen') + '" />  </div>';
+
+		$.magnificPopup.open({
+			items: {
+				src: $img,
+				type: 'inline'
+			}
+		});
+	});
+	
+
 	//nicdark_mpopup_ajax
 	$('.nicdark_mpopup_ajax').magnificPopup({
 		type: 'ajax',
