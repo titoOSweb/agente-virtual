@@ -52,16 +52,16 @@
 											<li><a href="/primer-grado/aprende-el-abecedario">Aprende el abecedario</a></li>
 											<li><a href="/primer-grado/aprende-los-numeros">Aprende los números</a></li>
 											<li><a href="/primer-grado/aprende-las-formas-geometricas">Aprende las formas geometricas</a></li>
-											<li><a href="#">Conoce las partes del computador</a></li>											
+											<li><a href="/primer-grado/partes-computador">Conoce las partes del computador</a></li>											
 										</ul>
 									</li>
 									
 									<li class="mm_grid mm_grid_6">
 										<ul class="sub-menu">
-											<li><a href="#">Adivina la palabra</a></li>
-											<li><a href="#">Formando palabras</a></li>
-											<li><a href="#">Camino de letras</a></li>
-											<li><a href="#">Figuras + Letras</a></li>
+											<li><a href="/primer-grado/adivina-la-palabra">Adivina la palabra</a></li>
+											<li><a href="/primer-grado/formando-palabras">Formando palabras</a></li>
+											<li><a href="/primer-grado/camino-de-letras">Camino de letras</a></li>
+											<li><a href="/primer-grado/figuras-mas-letras">Figuras + Letras</a></li>
 										</ul>
 									</li>									
 								</ul>

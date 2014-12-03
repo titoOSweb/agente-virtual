@@ -32,17 +32,12 @@ Route::get('/primer-grado/aprende-los-numeros', function()
 
 Route::get('/primer-grado/aprende-las-formas-geometricas', function()
 {
-	$formas = [		
-		["forma" => '1', 'descripcion' => 'Circulo'],
-		["forma" => '2', 'descripcion' => 'Ovalo'],
-		["forma" => '3', 'descripcion' => 'Triangulo'],
-		["forma" => '4', 'descripcion' => 'Cuadrado'],
-		["forma" => '5', 'descripcion' => 'Rectangulo'],
-		["forma" => '6', 'descripcion' => 'Rombo'],
-		["forma" => '7', 'descripcion' => 'Pentagono'],
-		["forma" => '8', 'descripcion' => 'Hexagono'],
-		["forma" => '9', 'descripcion' => 'Octágono'],
-	];
 	return View::make('primer-grado.aprende-las-formas-geometricas', compact('formas'));
 });
 
+Route::get('/primer-grado/partes-computador', function()
+{
+	$partes = [["parte" => 'Cornetas', "imagen" => 'cornetas.jpg'], ["parte" => 'CPU', "imagen" => 'cpu.jpg'], ["parte" => 'Impresora', "imagen" => 'impresora.jpg'], ["parte" => 'Monitor', "imagen" => 'monitor.jpg'], ["parte" => 'Mouse', "imagen" => 'mouse.jpg'], ["parte" => 'Teclado', "imagen" => 'teclado.gif'], ];
+	shuffle($partes);
+	return View::make('primer-grado.partes-computador', compact('partes'));
+});
