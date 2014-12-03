@@ -50,7 +50,7 @@
 									<li class="mm_grid mm_grid_6">
 										<ul class="sub-menu">
 											<li><a href="/primer-grado/aprende-el-abecedario">Aprende el abecedario</a></li>
-											<li><a href="#">Aprende los números</a></li>
+											<li><a href="/primer-grado/aprende-los-numeros">Aprende los números</a></li>
 											<li><a href="#">Adivina la palabra</a></li>
 											<li><a href="#">Camino de letras</a></li>
 										</ul>
