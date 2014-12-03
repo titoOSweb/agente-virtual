@@ -43,7 +43,8 @@
 	}
 
     </style>
-    
+
+    @yield('css')   
     
 </head>  
 <body id="start_nicdark_framework">

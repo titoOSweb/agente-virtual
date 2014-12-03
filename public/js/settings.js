@@ -277,6 +277,20 @@
 			}
 		});
 	});
+
+	$('.formas-geometricas').on("click", function(){
+
+		var $img = '<div class="white-popup" align="center"> <h1 class="nicdark_btn nicdark_bg_gray extrasize nicdark_radius nicdark_shadow white">'+ $(this).data('descripcion') + '</h1> </div>';
+
+		$.magnificPopup.open({
+			items: {
+				src: $img,
+				type: 'inline'
+			}
+		});
+	});
+
+	
 	
 
 	//nicdark_mpopup_ajax
