@@ -1,0 +1,12 @@
+
+.letras input{
+	font-size: 38px;
+	border: 1px solid #ccc;
+	width: 120px;
+	height: 64px;
+	text-align: center;
+}
+
+#adivina{
+	text-align: center;
+}

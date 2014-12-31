@@ -10,14 +10,7 @@
 					</div>
 				</div>
 				<div class="grid grid_6 right">
-					<div class="nicdark_focus right">
-						<h6 class="white">
-							
-							<i class="icon-plus-outline"></i>&nbsp;&nbsp;<a class="white nicdark_mpopup_ajax" href="form-register.php">REGISTRO</a>
-							&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">·</span>&nbsp;&nbsp;&nbsp;&nbsp;
-							<i class="icon-lock-1"></i>&nbsp;&nbsp;<a class="white nicdark_mpopup_ajax" href="form-login.php">ACCEDER</a>
-						</h6>
-					</div>
+					
 				</div>
 
 			</div>

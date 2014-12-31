@@ -49,28 +49,7 @@
 
 			<div class="row">
 
-				<?php 	
-				$index = 0; 
-				$class="nicdark_bg_yellow"; 
-				?>
-				@foreach ($partes as $parte) 
-				@if($index == 0)
-				<?php $class="nicdark_bg_green"; ?>				
-				@elseif($index == 1)
-				<?php $class="nicdark_bg_blue"; ?>	
-				@elseif($index == 2)
-				<?php $class="nicdark_bg_violet"; ?>	
-				@elseif($index == 3)
-				<?php $class="nicdark_bg_red"; ?>	
-				<?php $index = -1; ?>					
-				@endif
-
-				<a href="javascript:void(0)" data-imagen="/images/primer-grado/partes-computador/{{ $parte['imagen'] }}" 
-				data-descripcion="{{ $parte['parte'] }}" class="partes-computador extrasize nicdark_btn {{ $class }} medium 
-				nicdark_shadow nicdark_radius white nicdark_margin20"> 	{{ $parte['parte'] }} </a>
-
-				<?php $index++; ?>
-				@endforeach
+				
 
 
 

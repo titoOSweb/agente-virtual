@@ -49,23 +49,23 @@
 
 			<div class="row">				
 				<?php 	
-					$index = 0; 
-					$class="nicdark_bg_yellow"; 
+				$index = 0; 
+				$class="nicdark_bg_yellow"; 
 				?>
 				@foreach ($numeros as $numero) 
-					@if($index == 0)
-						<?php $class="nicdark_bg_green"; ?>				
-					@elseif($index == 1)
-						<?php $class="nicdark_bg_blue"; ?>	
-					@elseif($index == 2)
-						<?php $class="nicdark_bg_violet"; ?>	
-					@elseif($index == 3)
-						<?php $class="nicdark_bg_red"; ?>	
-						<?php $index = -1; ?>					
-					@endif
+				@if($index == 0)
+				<?php $class="nicdark_bg_green"; ?>				
+				@elseif($index == 1)
+				<?php $class="nicdark_bg_blue"; ?>	
+				@elseif($index == 2)
+				<?php $class="nicdark_bg_violet"; ?>	
+				@elseif($index == 3)
+				<?php $class="nicdark_bg_red"; ?>	
+				<?php $index = -1; ?>					
+				@endif
 
-					<a href="javascript:void(0)" data-imagen="/images/primer-grado/numeros/{{ $numero['numero'] }}.gif" data-descripcion="{{ $numero['descripcion'] }}" class="letras-abecedario extrasize nicdark_width50 nicdark_btn {{ $class }} medium nicdark_shadow nicdark_radius white nicdark_margin20">{{ $numero['numero'] }}</a>
-					<?php $index++; ?>
+				<a href="javascript:void(0)" data-imagen="/images/primer-grado/numeros/{{ $numero['numero'] }}.gif" data-descripcion="{{ $numero['descripcion'] }}" class="letras-abecedario extrasize nicdark_width50 nicdark_btn {{ $class }} medium nicdark_shadow nicdark_radius white nicdark_margin20">{{ $numero['numero'] }}</a>
+				<?php $index++; ?>
 				@endforeach
 			</div>
 
@@ -79,24 +79,14 @@
 		
 		<!--sidebar-->
 		<div class="grid grid_4">			
-			
-			<div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow">
-				<div class="nicdark_textevidence nicdark_bg_orange nicdark_radius_top">
-					<h4 class="white nicdark_margin20">Agente</h4>
-					<i class="icon-tags-1 nicdark_iconbg right medium orange"></i>
-				</div>
-				<div class="nicdark_margin10">
-					<a href="single-post-right-sidebar.php#" class="nicdark_btn nicdark_bg_grey2 small nicdark_shadow nicdark_radius grey subtitle nicdark_margin10">Teacher</a>
-					<a href="single-post-right-sidebar.php#" class="nicdark_btn nicdark_bg_grey2 small nicdark_shadow nicdark_radius grey subtitle nicdark_margin10">Teacher</a>
-				</div>
-			</div>
-
-			<div class="nicdark_space20"></div>
+			@include('layouts.agente')
 		</div>
-			
-			
-			<!--end nicdark_container-->
-		</section>
-		<!--end section-->
-		@endsection
+
+	</div>
+	
+	
+	<!--end nicdark_container-->
+</section>
+<!--end section-->
+@endsection
 

@@ -208,6 +208,8 @@ jQuery(document).ready(function() {
 
 	});
 </script>
+
+@yield('js')
 <!--custom js-->
 </body>  
 </html>

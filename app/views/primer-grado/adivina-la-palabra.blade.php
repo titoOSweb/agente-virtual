@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
-@section('content')
+@section('css')
+<link rel="stylesheet" href="/css/adivina-la-palabra.css">
+@endsection
 
+@section('content')
 <!--start section-->
 <section id="nicdark_parallax_title" class="nicdark_section nicdark_imgparallax nicdark_parallaxx_img8">
 
@@ -15,7 +18,7 @@
 				<div class="nicdark_space100"></div>
 				<h1 class="white subtitle">PRIMER GRADO</h1>
 				<div class="nicdark_space10"></div>
-				<h3 class="subtitle white">CONOCE LAS PARTES DEL COMPUTADOR</h3>
+				<h3 class="subtitle white">ADIVINA LA PALABRA</h3>
 				<div class="nicdark_space20"></div>
 				<div class="nicdark_divider left big"><span class="nicdark_bg_white nicdark_radius"></span></div>
 				<div class="nicdark_space40"></div>
@@ -42,38 +45,20 @@
 
 			<div class="nicdark_space50"></div>
 
-			<h1 class="subtitle greydark">Seleccione una forma geometrica:</h1>
+			<h1 class="subtitle greydark">Adivina la palabra:</h1>
 			<div class="nicdark_space20"></div>
 			<div class="nicdark_divider left small"><span class="nicdark_bg_yellow nicdark_radius"></span></div>
 			<div class="nicdark_space20"></div>
 
 			<div class="row">
 
-				<?php 	
-				$index = 0; 
-				$class="nicdark_bg_yellow"; 
-				?>
-				@foreach ($partes as $parte) 
-				@if($index == 0)
-				<?php $class="nicdark_bg_green"; ?>				
-				@elseif($index == 1)
-				<?php $class="nicdark_bg_blue"; ?>	
-				@elseif($index == 2)
-				<?php $class="nicdark_bg_violet"; ?>	
-				@elseif($index == 3)
-				<?php $class="nicdark_bg_red"; ?>	
-				<?php $index = -1; ?>					
-				@endif
+				<div id="adivina" class="grid grid_8 center" align="center">
+					<img src="" alt="" id="image" class="grid grid_4 center">
+					<div class="letras grid grid_8 center"></div>
+				</div>
 
-				<a href="javascript:void(0)" data-imagen="/images/primer-grado/partes-computador/{{ $parte['imagen'] }}" 
-				data-descripcion="{{ $parte['parte'] }}" class="partes-computador extrasize nicdark_btn {{ $class }} medium 
-				nicdark_shadow nicdark_radius white nicdark_margin20"> 	{{ $parte['parte'] }} </a>
-
-				<?php $index++; ?>
-				@endforeach
-
-
-
+				<div id="resultado"></div>
+				
 			</div>			
 		</div>
 		
@@ -89,3 +74,6 @@
 <!--end section-->
 @endsection
 
+@section('js')
+	<script src="/js/adivina-la-palabra.js"> </script>
+@endsection

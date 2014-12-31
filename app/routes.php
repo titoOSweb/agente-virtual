@@ -41,3 +41,53 @@ Route::get('/primer-grado/partes-computador', function()
 	shuffle($partes);
 	return View::make('primer-grado.partes-computador', compact('partes'));
 });
+
+/* 30-12-2014 */
+Route::get('/api/primer-grado/adivina-la-palabra', function()
+{	
+	$images = [];
+
+	$files = File::allFiles(public_path(). '/images/primer-grado/adivina-la-palabra');
+	foreach ($files as $file)
+	{
+		//File::move(public_path(). '/images/primer-grado/adivina-la-palabra/'.pathinfo($file, PATHINFO_BASENAME), public_path(). '/images/primer-grado/adivina-la-palabra/'.str_replace("+", "_",pathinfo($file, PATHINFO_BASENAME)));
+		$extension = pathinfo($file, PATHINFO_EXTENSION);
+		if($extension == 'jpg'){
+			$current = [];
+			$current['filename'] = explode("_",pathinfo($file, PATHINFO_FILENAME))[0];
+			$current['silabas'] = @explode("-",explode("_",pathinfo($file, PATHINFO_FILENAME))[1]);
+			$current['extension'] = pathinfo($file, PATHINFO_EXTENSION);
+			$current['length'] = strlen($current['filename']);
+			$current['path'] = '/images/primer-grado/adivina-la-palabra/' . pathinfo($file, PATHINFO_FILENAME) . "." .$current['extension'];
+			array_push($images, $current);
+		}		
+	}
+
+	shuffle($images);
+	$images = array_slice($images, 0, 4);
+	
+	return json_encode($images);
+});
+
+Route::get('/primer-grado/adivina-la-palabra', function()
+{			
+	return View::make('primer-grado.adivina-la-palabra');
+});
+
+Route::get('/primer-grado/formando-palabras', function()
+{
+	return View::make('primer-grado.formando-palabras');
+});
+
+Route::get('/primer-grado/camino-de-letras', function()
+{
+	return View::make('primer-grado.camino-de-letras');
+});
+
+Route::get('/primer-grado/figuras-mas-letras', function()
+{
+	return View::make('primer-grado.figuras-mas-letras');
+});
+
+
+
