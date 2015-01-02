@@ -6,15 +6,14 @@ $.ajaxSetup({
 
 var images;
 
-$.get('/api/primer-grado/adivina-la-palabra', function(data) {
+$.get('/api/primer-grado/figuras-mas-letras', function(data) {
 	images = data;
 },'json');
 
 /* put the object */
-var focused = $('input.toFill:first');
 
-function adivinar(obj){
-	$("#image").prop('src', obj.path);
+function figurar(obj){
+	$("#figura").prop('src', obj.path);
 
 	var filename = obj.filename;
 	$(".letras").empty();
@@ -93,7 +92,7 @@ function adivinar(obj){
 
 }
 var index = 0;
-adivinar(images[index]);
+figurar(images[index]);
 
 
 

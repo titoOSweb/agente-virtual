@@ -65,19 +65,19 @@
 								<ul class="sub-menu">
 									<li class="mm_grid mm_grid_6">
 										<ul class="sub-menu">
-											<li><a href="#">Singular y Plural</a></li>
-											<li><a href="#">Cada palabra en su lugar</a></li>
-											<li><a href="#">Caminos de flechas</a></li>
-											<li><a href="#">Ordena los números</a></li>
+											<li><a href="/segundo-grado/singular-y-plural">Singular y Plural</a></li>
+											<li><a href="/segundo-grado/cada-palabra-en-su-lugar">Cada palabra en su lugar</a></li>
+											<li><a href="/segundo-grado/caminos-de-flechas">Caminos de flechas</a></li>
+											<li><a href="/segundo-grado/ordena-los-numeros">Ordena los números</a></li>
 										</ul>
 									</li>
 									
 									<li class="mm_grid mm_grid_6">
 										<ul class="sub-menu">
-											<li><a href="#">"Mayor que", "Menor que"</a></li>
-											<li><a href="#">Arrastra los números</a></li>
-											<li><a href="#">A Sumar!</a></li>
-											<li><a href="#">A Restar!</a></li>
+											<li><a href="/segundo-grado/mayor-que-menor-que">"Mayor que", "Menor que"</a></li>
+											<li><a href="/segundo-grado/arrastra-los-numeros">Arrastra los números</a></li>
+											<li><a href="/segundo-grado/a-sumar">A Sumar!</a></li>
+											<li><a href="/segundo-grado/a-restar">A Restar!</a></li>
 										</ul>
 									</li>									
 								</ul>

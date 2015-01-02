@@ -89,5 +89,75 @@ Route::get('/primer-grado/figuras-mas-letras', function()
 	return View::make('primer-grado.figuras-mas-letras');
 });
 
+/* 02-01-2015 */
+
+Route::get('/api/primer-grado/figuras-mas-letras', function()
+{	
+	$images = [];
+
+	$files = File::allFiles(public_path(). '/images/primer-grado/figuras-mas-letras');
+	foreach ($files as $file)
+	{
+		//File::move(public_path(). '/images/primer-grado/adivina-la-palabra/'.pathinfo($file, PATHINFO_BASENAME), public_path(). '/images/primer-grado/adivina-la-palabra/'.str_replace("+", "_",pathinfo($file, PATHINFO_BASENAME)));
+		$extension = pathinfo($file, PATHINFO_EXTENSION);
+		if($extension == 'jpg'){
+			$current = [];
+			$current['filename'] = pathinfo($file, PATHINFO_FILENAME);
+			$current['vocal'] = strtoupper($current['filename'][0]);
+			$current['extension'] = pathinfo($file, PATHINFO_EXTENSION);
+			$current['length'] = strlen($current['filename']);
+			$current['path'] = '/images/primer-grado/figuras-mas-letras/' . pathinfo($file, PATHINFO_FILENAME) . "." .$current['extension'];
+			array_push($images, $current);
+		}		
+	}
+
+	shuffle($images);
+	$images = array_slice($images, 0, 4);
+	
+	return json_encode($images);
+});
 
 
+/* ************************************************************************************************** */
+/* SEGUNDO GRADO */
+/* ************************************************************************************************** */
+
+Route::get('/segundo-grado/singular-y-plural', function()
+{			
+	return View::make('segundo-grado.singular-y-plural');
+});
+
+Route::get('/segundo-grado/cada-palabra-en-su-lugar', function()
+{			
+	return View::make('segundo-grado.cada-palabra-en-su-lugar');
+});
+
+Route::get('/segundo-grado/caminos-de-flechas', function()
+{			
+	return View::make('segundo-grado.caminos-de-flechas');
+});
+
+Route::get('/segundo-grado/ordena-los-numeros', function()
+{			
+	return View::make('segundo-grado.ordena-los-numeros');
+});
+
+Route::get('/segundo-grado/mayor-que-menor-que', function()
+{			
+	return View::make('segundo-grado.mayor-que-menor-que');
+});
+
+Route::get('/segundo-grado/arrastra-los-numeros', function()
+{			
+	return View::make('segundo-grado.arrastra-los-numeros');
+});
+
+Route::get('/segundo-grado/a-sumar', function()
+{			
+	return View::make('segundo-grado.a-sumar');
+});
+
+Route::get('/segundo-grado/a-restar', function()
+{			
+	return View::make('segundo-grado.a-restar');
+});

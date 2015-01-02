@@ -34,9 +34,6 @@ function adivinar(obj){
 		$(".pieces").append('<span>'+piece+'</span>');
 	});
 
-
-
-
 	console.table(pieces);
 
 	$('input').on('touchstart', function () {

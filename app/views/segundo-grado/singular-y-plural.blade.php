@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('css')
-<link rel="stylesheet" href="/css/primer-grado.css">
+<link rel="stylesheet" href="/css/segundo-grado.css">
 @endsection
 
 @section('content')
@@ -17,9 +17,9 @@
 			<div class="grid grid_12">
 				<div class="nicdark_space100"></div>
 				<div class="nicdark_space100"></div>
-				<h1 class="white subtitle">PRIMER GRADO</h1>
+				<h1 class="white subtitle">SEGUNDO GRADO</h1>
 				<div class="nicdark_space10"></div>
-				<h3 class="subtitle white">FORMANDO PALABRAS</h3>
+				<h3 class="subtitle white">SINGULAR Y PLURAL</h3>
 				<div class="nicdark_space20"></div>
 				<div class="nicdark_divider left big"><span class="nicdark_bg_white nicdark_radius"></span></div>
 				<div class="nicdark_space40"></div>
@@ -43,27 +43,42 @@
 		<div class="nicdark_space50"></div>
 
 		<div class="grid grid_8">
+
 			<div class="nicdark_space50"></div>
 
-			<h1 class="subtitle greydark">Formando palabras:</h1>
+			<h1 class="subtitle greydark">Arrastra la imagen al lugar que corresponde:</h1>
 			<div class="nicdark_space20"></div>
 			<div class="nicdark_divider left small"><span class="nicdark_bg_yellow nicdark_radius"></span></div>
 			<div class="nicdark_space20"></div>
 
 			<div class="row">
 
-				<div id="adivina" class="grid grid_8 center" align="center">
-					<img src="" alt="" id="image" class="grid grid_4 center left">
-					<div class="grid grid_3 right pieces">
-						<div><h3>Selecciona un elemento:</h3></div>
-						<hr>
-					</div>
-					<div class="letras grid grid_8 center"></div>
+				<div id="imagen" class="grid grid_8 center" align="center">
+					<img src="" alt="" id="figura">
+					<hr>
 				</div>
 
-				<div id="resultado"></div>
-				
+
+				<div class="grid grid_10 center" align="center">
+					
+					<div class="grid_4 singular"></div>
+					<div class="grid_4 plural"></div>
+
+				</div>
+
+				<div id="figuras-mas-letras" class="grid grid_6">
+					
+
+
+				</div>
+
+
 			</div>	
+
+			
+
+			<div class="nicdark_space50"></div>
+					
 		</div>
 		
 		<!--sidebar-->
@@ -78,6 +93,3 @@
 <!--end section-->
 @endsection
 
-@section('js')
-	<script src="/js/formando-palabras.js"> </script>	
-@endsection

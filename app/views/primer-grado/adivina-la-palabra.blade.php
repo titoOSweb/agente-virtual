@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('css')
-<link rel="stylesheet" href="/css/adivina-la-palabra.css">
+<link rel="stylesheet" href="/css/primer-grado.css">
 @endsection
 
 @section('content')
