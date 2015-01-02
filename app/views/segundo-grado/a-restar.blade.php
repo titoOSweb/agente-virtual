@@ -19,7 +19,7 @@
 				<div class="nicdark_space100"></div>
 				<h1 class="white subtitle">SEGUNDO GRADO</h1>
 				<div class="nicdark_space10"></div>
-				<h3 class="subtitle white">SINGULAR Y PLURAL</h3>
+				<h3 class="subtitle white">A RESTAR!</h3>
 				<div class="nicdark_space20"></div>
 				<div class="nicdark_divider left big"><span class="nicdark_bg_white nicdark_radius"></span></div>
 				<div class="nicdark_space40"></div>
@@ -43,35 +43,40 @@
 		<div class="nicdark_space50"></div>
 
 		<div class="grid grid_8">
-
 			<div class="nicdark_space50"></div>
 
-			<h1 class="subtitle greydark">Arrastra la imagen al lugar que corresponde:</h1>
+			<h1 class="subtitle greydark">Restar:</h1>
 			<div class="nicdark_space20"></div>
 			<div class="nicdark_divider left small"><span class="nicdark_bg_yellow nicdark_radius"></span></div>
 			<div class="nicdark_space20"></div>
 
+			<div class="nicdark_space50"></div>	
+
 			<div class="row">
 
-				<div id="imagen" class="grid grid_8 center" align="center">
-					<img src="/images/primer-grado/figuras-mas-letras/abeja.jpg" alt="" id="figura">
-					<hr>
-				</div>
+				<div class="grid grid_10">
 
+					<div class="grid grid_8" align="center">
+						<div class="operacion">10 - 4 = ?</div>
+						<hr>
+					</div>
 
-				<div class="grid grid_10 center" align="center">
+					<div class="grid grid_6 fallas">
+						<div class="nicdark_alerts nicdark_bg_red nicdark_radius nicdark_shadow">
+							<p class="white nicdark_size_medium">&nbsp;&nbsp;&nbsp; 14 - 2 = ?</p>
+							<i class="icon-warning-empty nicdark_iconbg right medium red"></i>
+						</div>
+					</div>
+					<div class="grid grid_2 ">
+
+						<div class="nicdark_margin100">
+							<span id="reloj" class="nicdark_btn nicdark_bg_orange medium nicdark_radius white"><i class="icon-stopwatch"></i>&nbsp;&nbsp;60 seg</span>
+						</div>
+
+					</div>
 					
-					<div class="grid_4 singular"></div>
-					<div class="grid_4 plural"></div>
-
 				</div>
-
-				<div id="figuras-mas-letras" class="grid grid_6">
-					
-
-
-				</div>
-
+				
 
 			</div>	
 

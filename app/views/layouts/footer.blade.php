@@ -8,10 +8,10 @@
 
 		<div class="grid grid_6 nicdark_aligncenter_iphoneland nicdark_aligncenter_iphonepotr">
 			<div class="nicdark_space20"></div>
-			<p class="white">© Copyright 2014  <span class="grey"></span> - Hecho con <i class="icon-heart-filled red nicdark_zoom"></i> en Venezuela</p>
+			<p class="white">© Copyright 2014  <span class="grey"></span> - I.U.P. "Santiago Mariño"</p>
 		</div>
 
-
+<!--
 		<div class="grid grid_6">
 			<div class="nicdark_focus right nicdark_aligncenter_iphoneland nicdark_aligncenter_iphonepotr">
 				<div class="nicdark_margin10">
@@ -28,7 +28,7 @@
 				</div>
 			</div>
 		</div>
-
+-->
 	</div>
 	<!--end nicdark_container-->
 

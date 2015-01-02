@@ -19,7 +19,7 @@
 				<div class="nicdark_space100"></div>
 				<h1 class="white subtitle">SEGUNDO GRADO</h1>
 				<div class="nicdark_space10"></div>
-				<h3 class="subtitle white">SINGULAR Y PLURAL</h3>
+				<h3 class="subtitle white">CADA PALABRA EN SU LUGAR</h3>
 				<div class="nicdark_space20"></div>
 				<div class="nicdark_divider left big"><span class="nicdark_bg_white nicdark_radius"></span></div>
 				<div class="nicdark_space40"></div>
@@ -44,35 +44,27 @@
 
 		<div class="grid grid_8">
 
-			<div class="nicdark_space50"></div>
-
-			<h1 class="subtitle greydark">Arrastra la imagen al lugar que corresponde:</h1>
-			<div class="nicdark_space20"></div>
-			<div class="nicdark_divider left small"><span class="nicdark_bg_yellow nicdark_radius"></span></div>
-			<div class="nicdark_space20"></div>
+			<div class="nicdark_space50"></div>	
 
 			<div class="row">
-
-				<div id="imagen" class="grid grid_8 center" align="center">
-					<img src="/images/primer-grado/figuras-mas-letras/abeja.jpg" alt="" id="figura">
+				<div id="camino-de-letras" class="grid grid_6" align="center">
+					<div>
+						<span>A</span>
+						<span>R</span>
+						<span>B</span>
+						<span>O</span>
+						<span>L</span>
+					</div>
 					<hr>
 				</div>
 
-
-				<div class="grid grid_10 center" align="center">
-					
-					<div class="grid_4 singular"></div>
-					<div class="grid_4 plural"></div>
-
+				<div class="grid grid_8 center" align="center">
+					<a href="#" class="big nicdark_width20 nicdark_btn nicdark_bg_blue nicdark_radius white nicdark_margin10">B</a>
+					<a href="#" class="big nicdark_width20 nicdark_btn nicdark_bg_blue nicdark_radius white nicdark_margin10">A</a>
+					<a href="#" class="big nicdark_width20 nicdark_btn nicdark_bg_blue nicdark_radius white nicdark_margin10">L</a>
+					<a href="#" class="big nicdark_width20 nicdark_btn nicdark_bg_blue nicdark_radius white nicdark_margin10">O</a>
+					<a href="#" class="big nicdark_width20 nicdark_btn nicdark_bg_blue nicdark_radius white nicdark_margin10">R</a>
 				</div>
-
-				<div id="figuras-mas-letras" class="grid grid_6">
-					
-
-
-				</div>
-
-
 			</div>	
 
 			

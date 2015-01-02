@@ -79,13 +79,28 @@ body{
 /* SEGUNDO GRADO */
 .singular,
 .plural{
-	min-height: 150px;
+	min-height: 100px;
 	font-size: 80px;
+	padding: 50px 0px;
+	color: #999;
+	border-radius: 4px;
+
+	-o-transition: all 500ms;
+-moz-transition: all 500ms;
+-webkit-transition: all 500ms;
+transition: all 500ms;
+
+cursor: pointer;
+
 }
 
-.singular{
-	padding: 50px 0px;
+.singular{	
 	background-color: rgba(116, 206, 228, 0.5);
+}
+
+.singular:hover{
+	background-color: rgba(116, 206, 228, 1);
+	color: #333;
 }
 
 .singular:after{
@@ -98,4 +113,98 @@ body{
 }
 .plural:after{
 	content: 'Plural';
+}
+
+.plural:hover{
+	background-color: rgba(111, 193, 145, 1);
+	color: #333;
+}
+
+/* LUGAR */
+
+#lugar{
+
+}
+
+#lugar div.grid_2{
+	min-height: 400px;
+	border-radius: 4px;
+}
+
+#palabra-aleatoria h1{
+	font-size: 64px;
+	margin-bottom: 32px;
+}
+/* ORDENA LOS NUMEROS */
+
+#ordena-los-numeros .background {
+	background: url(../img/laptop.png);
+	background-repeat: no-repeat;
+	min-height: 349px;
+	background-position: center;
+	position: relative;
+
+}
+
+#ordena-los-numeros .background span{
+	font-size: 64px;
+	position: absolute;
+}
+
+.top{
+	top: 25px;
+	left: 300px;
+}
+.left{
+	top: 130px;
+	left: 200px;
+}
+.right{
+	top: 60px;
+	right: 200px;
+}
+.bottom{
+	bottom: 60px;
+	left: 430px;
+}
+
+
+
+
+.tablet {
+	background: url(../img/ipad.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 75px;
+	min-width: 64px;
+}
+
+/* MAYOR MENOR */
+
+.numeromm{
+	display: inline-block;
+	font-size: 64px;
+	margin: 20px;
+}
+
+/* ARRASTRA */
+
+.circulo{
+	border-radius: 50%;
+	min-height: 300px;
+	min-width: 300px;
+}
+
+/* SUMA */
+.operacion{
+	font-size: 64px;
+}
+
+.nicdark_size_medium{
+	font-size: 24px;
+}
+
+.fallas{
+	border-right: 1px solid #ccc;
+	padding-right: 10px;
 }

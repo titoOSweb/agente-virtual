@@ -19,7 +19,7 @@
 				<div class="nicdark_space100"></div>
 				<h1 class="white subtitle">SEGUNDO GRADO</h1>
 				<div class="nicdark_space10"></div>
-				<h3 class="subtitle white">SINGULAR Y PLURAL</h3>
+				<h3 class="subtitle white">ORDENA LOS NUMEROS</h3>
 				<div class="nicdark_space20"></div>
 				<div class="nicdark_divider left big"><span class="nicdark_bg_white nicdark_radius"></span></div>
 				<div class="nicdark_space40"></div>
@@ -44,35 +44,27 @@
 
 		<div class="grid grid_8">
 
-			<div class="nicdark_space50"></div>
-
-			<h1 class="subtitle greydark">Arrastra la imagen al lugar que corresponde:</h1>
-			<div class="nicdark_space20"></div>
-			<div class="nicdark_divider left small"><span class="nicdark_bg_yellow nicdark_radius"></span></div>
-			<div class="nicdark_space20"></div>
+			<div class="nicdark_space50"></div>	
 
 			<div class="row">
-
-				<div id="imagen" class="grid grid_8 center" align="center">
-					<img src="/images/primer-grado/figuras-mas-letras/abeja.jpg" alt="" id="figura">
+				<div id="ordena-los-numeros" class="grid grid_8" align="center">
+					<div class="background">
+						<div>
+							<span class="top">10</span>
+							<span class="left">21</span>
+							<span class="right">35</span>
+							<span class="bottom">7</span>
+						</div>
+					</div>
 					<hr>
 				</div>
 
-
 				<div class="grid grid_10 center" align="center">
-					
-					<div class="grid_4 singular"></div>
-					<div class="grid_4 plural"></div>
-
+					<div class="tablet grid_2"></div>
+					<div class="tablet grid_2"></div>
+					<div class="tablet grid_2"></div>
+					<div class="tablet grid_2"></div>
 				</div>
-
-				<div id="figuras-mas-letras" class="grid grid_6">
-					
-
-
-				</div>
-
-
 			</div>	
 
 			

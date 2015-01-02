@@ -19,7 +19,7 @@
 				<div class="nicdark_space100"></div>
 				<h1 class="white subtitle">SEGUNDO GRADO</h1>
 				<div class="nicdark_space10"></div>
-				<h3 class="subtitle white">SINGULAR Y PLURAL</h3>
+				<h3 class="subtitle white">"MAYOR QUE", "MENOR QUE"</h3>
 				<div class="nicdark_space20"></div>
 				<div class="nicdark_divider left big"><span class="nicdark_bg_white nicdark_radius"></span></div>
 				<div class="nicdark_space40"></div>
@@ -44,34 +44,21 @@
 
 		<div class="grid grid_8">
 
-			<div class="nicdark_space50"></div>
-
-			<h1 class="subtitle greydark">Arrastra la imagen al lugar que corresponde:</h1>
-			<div class="nicdark_space20"></div>
-			<div class="nicdark_divider left small"><span class="nicdark_bg_yellow nicdark_radius"></span></div>
-			<div class="nicdark_space20"></div>
+			<div class="nicdark_space50"></div>	
 
 			<div class="row">
-
-				<div id="imagen" class="grid grid_8 center" align="center">
-					<img src="/images/primer-grado/figuras-mas-letras/abeja.jpg" alt="" id="figura">
+					
+				<div class="grid grid_8 center" align="center">
+					<div class="numeromm">12</div>
+					<a href="#" class="nicdark_width50 nicdark_btn nicdark_bg_red extrasize  nicdark_radius white nicdark_margin10">?</a>
+					<div class="numeromm">64</div>
 					<hr>
 				</div>
 
-
-				<div class="grid grid_10 center" align="center">
-					
-					<div class="grid_4 singular"></div>
-					<div class="grid_4 plural"></div>
-
+				<div class="grid grid_8 center" align="center">
+					<a href="#" title="Mayor que" class="nicdark_width50 nicdark_btn nicdark_bg_blue extrasize nicdark_radius white nicdark_margin10">></a>
+					<a href="#" title="Menor que" class="nicdark_width50 nicdark_btn nicdark_bg_green extrasize  nicdark_radius white nicdark_margin10"><</a>
 				</div>
-
-				<div id="figuras-mas-letras" class="grid grid_6">
-					
-
-
-				</div>
-
 
 			</div>	
 
