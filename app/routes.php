@@ -161,3 +161,48 @@ Route::get('/segundo-grado/a-restar', function()
 {			
 	return View::make('segundo-grado.a-restar');
 });
+
+
+/* ************************************************************************************************** */
+/* TERCER GRADO */
+/* ************************************************************************************************** */
+
+Route::get('/tercer-grado/sustantivos', function()
+{			
+	return View::make('tercer-grado.sustantivos');
+});
+
+Route::get('/tercer-grado/dameros', function()
+{			
+	return View::make('tercer-grado.dameros');
+});
+
+Route::get('/tercer-grado/silabas', function()
+{			
+	return View::make('tercer-grado.silabas');
+});
+
+Route::get('/tercer-grado/familia-de-palabras', function()
+{			
+	return View::make('tercer-grado.familia-de-palabras');
+});
+
+Route::get('/tercer-grado/sopa-de-letras', function()
+{			
+	return View::make('tercer-grado.sopa-de-letras');
+});
+
+Route::get('/tercer-grado/a-sumar', function()
+{			
+	return View::make('tercer-grado.a-sumar');
+});
+
+Route::get('/tercer-grado/a-restar', function()
+{			
+	return View::make('tercer-grado.a-restar');
+});
+
+Route::get('/tercer-grado/a-multiplicar', function()
+{			
+	return View::make('tercer-grado.a-multiplicar');
+});

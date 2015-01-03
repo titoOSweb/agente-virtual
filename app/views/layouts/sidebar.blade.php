@@ -88,18 +88,18 @@
 								<ul class="sub-menu">
 									<li class="mm_grid mm_grid_6">
 										<ul class="sub-menu">
-											<li><a href="#">Sustantivos</a></li>
-											<li><a href="#">Dameros</a></li>
-											<li><a href="#">Silabas</a></li>
-											<li><a href="#">Familia de palabras</a></li>
+											<li><a href="/tercer-grado/sustantivos">Sustantivos</a></li>
+											<li><a href="/tercer-grado/dameros">Dameros</a></li>
+											<li><a href="/tercer-grado/silabas">Silabas</a></li>
+											<li><a href="/tercer-grado/familia-de-palabras">Familia de palabras</a></li>
 										</ul>
 									</li>
 									
 									<li class="mm_grid mm_grid_6">
 										<ul class="sub-menu">
-											<li><a href="#">A Sumar!</a></li>
-											<li><a href="#">A Restar!</a></li>
-											<li><a href="#">A Multiplicar!</a></li>
+											<li><a href="/tercer-grado/a-sumar">A Sumar!</a></li>
+											<li><a href="/tercer-grado/a-restar">A Restar!</a></li>
+											<li><a href="/tercer-grado/a-multiplicar">A Multiplicar!</a></li>
 										</ul>
 									</li>									
 								</ul>

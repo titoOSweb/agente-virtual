@@ -1,0 +1,253 @@
+body{
+	font-family: sans-serif;
+}
+
+
+.letras input{
+	font-size: 38px;
+	border: 1px solid #ccc;
+	width: 120px;
+	height: 64px;
+	text-align: center;
+}
+
+#adivina{
+	text-align: center;
+}
+
+#image{
+	max-height: 400px;
+}
+
+#figura{
+	max-height: 150px;
+	max-width: 150px;
+}
+.pieces{
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+}
+
+.pieces span{
+	padding: 3px;
+	font-size: 38px;
+	font-weight: bold;
+	border: 1px dashed #ccc;
+	margin: 10px;
+	display: inline-block;
+	font-family: sans-serif;
+	cursor: pointer;
+}
+
+.pieces span:hover{
+	background-color: #dcdcdc;
+}
+
+/* CAMINO */
+
+#big-letra{
+	font-size: 64px;
+	padding-top: 100px;
+}
+
+#camino-de-letras{
+	padding-left: 80px;
+	/*border: 1px solid #ccc;*/
+}
+
+#camino-de-letras div{
+	font-size: 40px;
+}
+
+#camino-de-letras div span{
+	text-decoration: underline;
+	padding: 12px 7px;
+	display: inline-block;
+}
+
+#camino-de-letras div span.falta:after{
+    content: "\00a0\00a0\00a0\00a0";
+}
+
+/* FIGURAS */
+
+#figuras-mas-letras{
+
+}
+
+
+/* SEGUNDO GRADO */
+.singular,
+.plural{
+	min-height: 100px;
+	font-size: 80px;
+	padding: 50px 0px;
+	color: #999;
+	border-radius: 4px;
+
+	-o-transition: all 500ms;
+-moz-transition: all 500ms;
+-webkit-transition: all 500ms;
+transition: all 500ms;
+
+cursor: pointer;
+
+}
+
+.singular{	
+	background-color: rgba(116, 206, 228, 0.5);
+}
+
+.singular:hover{
+	background-color: rgba(116, 206, 228, 1);
+	color: #333;
+}
+
+.singular:after{
+	content: 'Singular';
+}
+
+
+.plural{
+	background-color: rgba(111, 193, 145, 0.5);
+}
+.plural:after{
+	content: 'Plural';
+}
+
+.plural:hover{
+	background-color: rgba(111, 193, 145, 1);
+	color: #333;
+}
+
+/* LUGAR */
+
+#lugar{
+
+}
+
+#lugar div.grid_2{
+	min-height: 400px;
+	border-radius: 4px;
+}
+
+#palabra-aleatoria h1{
+	font-size: 64px;
+	margin-bottom: 32px;
+}
+/* ORDENA LOS NUMEROS */
+
+#ordena-los-numeros .background {
+	background: url(../img/laptop.png);
+	background-repeat: no-repeat;
+	min-height: 349px;
+	background-position: center;
+	position: relative;
+
+}
+
+#ordena-los-numeros .background span{
+	font-size: 64px;
+	position: absolute;
+}
+
+.top{
+	top: 25px;
+	left: 300px;
+}
+.left{
+	top: 130px;
+	left: 200px;
+}
+.right{
+	top: 60px;
+	right: 200px;
+}
+.bottom{
+	bottom: 60px;
+	left: 430px;
+}
+
+
+
+
+.tablet {
+	background: url(../img/ipad.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 75px;
+	min-width: 64px;
+}
+
+/* MAYOR MENOR */
+
+.numeromm{
+	display: inline-block;
+	font-size: 64px;
+	margin: 20px;
+}
+
+/* ARRASTRA */
+
+.circulo{
+	border-radius: 50%;
+	min-height: 300px;
+	min-width: 300px;
+}
+
+/* SUMA */
+.operacion{
+	font-size: 64px;
+}
+
+.nicdark_size_medium{
+	font-size: 24px;
+}
+
+.fallas{
+	border-right: 1px solid #ccc;
+	padding-right: 10px;
+}
+
+/* TERCER */
+/*********************************************************************/
+
+/* sopa */
+
+#sopa table
+{
+	border: solid 1px #e8eef4;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#sopa table td
+{
+	padding: 5px;
+	border: solid 1px #999;
+	text-align: center;
+	font-size: 20px
+}
+
+#sopa table th
+{
+	padding: 6px 5px;
+	text-align: left;
+	background-color: #e8eef4;
+	border: solid 1px #e8eef4;
+}
+
+#palabras{
+	list-style: none;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 0px;
+}
+#palabras li{
+	padding: 5px;
+}
+
+#palabras li.encontrada{
+	color: gray;
+	text-decoration: line-through;
+}
