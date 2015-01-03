@@ -251,3 +251,39 @@ cursor: pointer;
 	color: gray;
 	text-decoration: line-through;
 }
+
+/* DAMEROS */
+
+#dameros-leyenda div{
+	max-width: 40px;
+	display: inline-block;
+	border: 1px solid #333;
+	margin-bottom: 5px;
+
+}
+
+span.up,
+span.down{
+	font-size: 20px;
+	width: 40px;
+	display: inline-block;
+	
+}
+
+span.up{
+	border-bottom: 1px solid #333;
+}
+
+#dameros div{
+	max-width: 40px;
+	display: inline-block;
+	font-size: 28px;
+	margin: 0px 5px;
+}
+
+#dameros div input{
+	border: 1px solid #ccc;
+	max-width: 40px;
+	font-size: 28px;
+	text-align: center;
+}
