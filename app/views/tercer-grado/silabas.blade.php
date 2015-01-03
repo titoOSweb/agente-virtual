@@ -51,18 +51,58 @@
 			<div class="nicdark_divider left small"><span class="nicdark_bg_yellow nicdark_radius"></span></div>
 			<div class="nicdark_space20"></div>
 
-			<div class="row">
+
+			<div class="row" id="intro">
+				
+				<div class="nicdark_textevidence nicdark_bg_grey nicdark_shadow nicdark_radius grid grid_8">  
+					<table class="nicdark_table extrabig nicdark_bg_blue nicdark_radius ">
+						<thead class="nicdark_border_blue">
+							<tr>
+								<td><h4 class="white">Categorias de silabas:</h4></td>
+								<td class="nicdark_width_percentage1"></td>
+							</tr>
+						</thead>
+						<tbody class="nicdark_bg_grey nicdark_border_grey">
+							<tr>
+								<td><p><strong>Monosilaba:</strong>&nbsp;&nbsp;&nbsp; 1 silaba &nbsp;&nbsp;&nbsp;<strong>PEZ</strong><strong style="float:right">PEZ</strong></p></td>
+								<td><a href="#" class="nicdark_btn_icon nicdark_bg_green small nicdark_radius_circle white"><i class="icon-ok-outline"></i></a></td>
+							</tr>
+							<tr>
+								<td><p><strong>Bisilaba:</strong>&nbsp;&nbsp;&nbsp; 2 silabas &nbsp;&nbsp;&nbsp;<strong>RELOJ</strong> <strong style="float:right">RE-LOJ</strong> </p> </td>
+								<td><a href="#" class="nicdark_btn_icon nicdark_bg_green small nicdark_radius_circle white"><i class="icon-ok-outline"></i></a></td>
+							</tr>
+							<tr>
+								<td><p><strong>Trisilaba:</strong>&nbsp;&nbsp;&nbsp; 3 silabas &nbsp;&nbsp;&nbsp;<strong>PARAGUAS</strong> <strong style="float:right">PA-RA-GUAS</strong> </p> </td>
+								<td><a href="#" class="nicdark_btn_icon nicdark_bg_green small nicdark_radius_circle white"><i class="icon-ok-outline"></i></a></td>
+							</tr>
+
+							<tr>
+								<td><p><strong>Polisilaba:</strong>&nbsp;&nbsp;&nbsp; 4 silabas &nbsp;&nbsp;&nbsp;<strong>MARIPOSA</strong> <strong style="float:right">MA-RI-PO-SA</strong> </p> </td>
+								<td><a href="#" class="nicdark_btn_icon nicdark_bg_green small nicdark_radius_circle white"><i class="icon-ok-outline"></i></a></td>
+							</tr>
+
+							<tr>
+								<td colspan="2"><a href="#" id="continuar" class="nicdark_btn_icon nicdark_bg_green big nicdark_radius white right">Continuar <i class="icon-forward"></i></a></td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+
+			<div class="row hide" id="game">
 
 				<div id="adivina" class="grid grid_8 center" align="center">
 					<div class="grid grid_2"></div>
-					<img src="" alt="" id="image" class="grid grid_4 center">
+					<img src="" alt="" id="image" class="grid grid_3 center">
 					<div class="grid grid_2"></div>
 					
 				</div>
 			
 				<div class="grid grid_8"><hr></div>
 
-				<div id="silabas" class="grid grid_8" align="center">
+				<div id="silabas" class="grid grid_7" align="center">
 										
 				</div>
 			</div>	

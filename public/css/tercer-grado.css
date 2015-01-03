@@ -291,16 +291,16 @@ span.up{
 /* SILABAS */
 
 #silabas div{
-	max-width: 50px;
+	max-width: 60px;
 	display: inline-block;
-	font-size: 40px;
+	font-size: 50px;
 	margin: 0px 5px;
 	
 }
 
 #silabas div.sep{
 	color: #ccc;
-	font-size: 40px;
+	font-size: 50px;
 	cursor: pointer;
 	font-weight: bold;
 }
@@ -311,4 +311,8 @@ span.up{
 
 #silabas div.sep.active{
 	color: #009ada;
+}
+
+.hide{
+	display: none;
 }
