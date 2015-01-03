@@ -67,7 +67,7 @@
 										<ul class="sub-menu">
 											<li><a href="/segundo-grado/singular-y-plural">Singular y Plural</a></li>
 											<li><a href="/segundo-grado/cada-palabra-en-su-lugar">Cada palabra en su lugar</a></li>
-											<li><a href="/segundo-grado/caminos-de-flechas">Caminos de flechas</a></li>
+											<li><a href="/segundo-grado/caminos-de-flechas">Cada letra en su lugar</a></li>
 											<li><a href="/segundo-grado/ordena-los-numeros">Ordena los números</a></li>
 										</ul>
 									</li>
