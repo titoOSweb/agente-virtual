@@ -206,3 +206,8 @@ Route::get('/tercer-grado/a-multiplicar', function()
 {			
 	return View::make('tercer-grado.a-multiplicar');
 });
+
+Route::get('/tercer-grado/arrastra', function()
+{			
+	return View::make('tercer-grado.arrastra');
+});

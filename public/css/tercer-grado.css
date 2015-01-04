@@ -316,3 +316,10 @@ span.up{
 .hide{
 	display: none;
 }
+
+/* Atrrastra */
+
+#arrastra-letras p{
+	font-size: 20px;
+	margin-top: 20px;
+}

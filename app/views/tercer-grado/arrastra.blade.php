@@ -19,7 +19,7 @@
 				<div class="nicdark_space100"></div>
 				<h1 class="white subtitle">TERCER GRADO</h1>
 				<div class="nicdark_space10"></div>
-				<h3 class="subtitle white">FAMILIA DE PALABRAS</h3>
+				<h3 class="subtitle white">ARRASTRA LA PALABRA</h3>
 				<div class="nicdark_space20"></div>
 				<div class="nicdark_divider left big"><span class="nicdark_bg_white nicdark_radius"></span></div>
 				<div class="nicdark_space40"></div>
@@ -46,28 +46,34 @@
 
 			<div class="nicdark_space50"></div>
 
-			<h1 class="subtitle greydark">Haz doble clic a las palabras que pertenecen a la misma familia:</h1>
+			<h1 class="subtitle greydark">Arrastra las palabras a la frase correcta:</h1>
 			<div class="nicdark_space20"></div>
 			<div class="nicdark_divider left small"><span class="nicdark_bg_yellow nicdark_radius"></span></div>
 			<div class="nicdark_space20"></div>
 
 
 			<div class="row" id="step-1">
-				<div class="nicdark_alerts nicdark_bg_red nicdark_radius nicdark_shadow">
-					<p class="white nicdark_size_medium"><strong>Ejemplo:</strong> Casa/Casita/Caserón/Casona/Casucha/Caserio</p>
-					<i class="icon-warning-empty nicdark_iconbg right medium orange"></i>
+				<div class="grid grid_8" id="arrastra-letras">
+
+					<p>El _____________ elabora artesania.</p>
+
+					<p>La _____________ gano un premio.</p>
+
+					<p>La pintura y la escultura son unas disciplinas _____________.</p>
 				</div>
 
 				<div class="grid grid_8"><hr></div>
-				<div id="familias" class="grid grid_8 center" align="center"></div>
+
+
+				<div id="arrastra" class="grid grid_8 center" align="center">
+					<a href="#" class="nicdark_btn nicdark_bg_yellow medium nicdark_shadow nicdark_radius white nicdark_margin10">Artesano</a>
+					<a href="#" class="nicdark_btn nicdark_bg_yellow medium nicdark_shadow nicdark_radius white nicdark_margin10">Artisticas</a>
+					<a href="#" class="nicdark_btn nicdark_bg_yellow medium nicdark_shadow nicdark_radius white nicdark_margin10">Artista</a>
+
+				</div>
 			
 				<div class="grid grid_8"><hr></div>
 
-				<div class="grid grid_8">
-					<div class="nicdark_textevidence center">
-						<a href="#" class="nicdark_zoom nicdark_btn nicdark_bg_blue extrasize nicdark_shadow nicdark_radius white nicdark_margin10">CABALLO</a>
-					</div>
-				</div>
 			</div>
 
 			<div class="nicdark_space50"></div>
