@@ -45,7 +45,7 @@
 		<div class="grid grid_8">
 			<div class="nicdark_space50"></div>
 
-			<h1 class="subtitle greydark">Sumar:</h1>
+			<h1 class="subtitle greydark">Multiplicar:</h1>
 			<div class="nicdark_space20"></div>
 			<div class="nicdark_divider left small"><span class="nicdark_bg_yellow nicdark_radius"></span></div>
 			<div class="nicdark_space20"></div>
