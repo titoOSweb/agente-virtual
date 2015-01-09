@@ -24,20 +24,19 @@ function adivinar(obj){
 	var pieces = [];
 
 	$.each(obj.silabas , function(index, val) {		
-		pieces.push(val);
-		$(".letras").append('<input type="text" class="letra toFill" disabled>')		
+		pieces.push({piece: val, i: index});
+		$(".letras").append('<input type="text" class="dnd letra toFill" data-index='+index+'>')		
 	});
 
 	shuffle(pieces);
 
 	$.each(pieces , function(index, piece) {		
-		$(".pieces").append('<span>'+piece+'</span>');
+		$(".pieces").append('<span class="dnd" data-index='+piece.i+'>'+piece.piece+'</span>');
 	});
 
-
-
-
-	console.table(pieces);
+	$(".letra").on("keydown", function(){
+		return false;;
+	});
 
 	$('input').on('touchstart', function () {
 		$(this).focus();
@@ -76,11 +75,9 @@ function adivinar(obj){
 			$.each($(".letras input"), function(index, val) {
 				completado = completado + val.value;
 			});
-
 			if(focused.next('input').is('input')){
 				focused.next('input').trigger('touchstart');
 			}
-
 			if(completado.length == filename.length){
 				if(completado.toLowerCase() == filename.toLowerCase()){
 					correcto();
@@ -90,7 +87,6 @@ function adivinar(obj){
 			}
 		}
 	})
-
 }
 var index = 0;
 adivinar(images[index]);
@@ -112,13 +108,8 @@ function equivocado(){
 
 $("#resultado").on("click", ".next-word", function(event){
 	event.preventDefault();
-	index++;
-	if(index < 4){
-		adivinar(images[index]);
-	}else{
-		location.href = "/";
-	}
-	
+	index++;	
+	location.href = "/primer-grado/formando-palabras";
 });
 
 

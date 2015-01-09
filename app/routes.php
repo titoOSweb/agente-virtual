@@ -163,6 +163,35 @@ Route::get('/segundo-grado/a-restar', function()
 });
 
 
+Route::get('/api/segundo-grado/singular-y-plural', function()
+{	
+	$images = [];
+
+	$files = File::allFiles(public_path(). '/images/primer-grado/singular-y-plural');
+	foreach ($files as $file)
+	{
+		//File::move(public_path(). '/images/primer-grado/adivina-la-palabra/'.pathinfo($file, PATHINFO_BASENAME), public_path(). '/images/primer-grado/adivina-la-palabra/'.str_replace("+", "_",pathinfo($file, PATHINFO_BASENAME)));
+		$extension = pathinfo($file, PATHINFO_EXTENSION);
+		
+		
+		if($extension == 'jpg'){
+			$current = [];
+			$current['filename'] = pathinfo($file, PATHINFO_FILENAME);
+			$current['sorp'] = (strtolower(substr($current['filename'],-1)) == 's') ? 'plural' : 'singular';
+			$current['extension'] = pathinfo($file, PATHINFO_EXTENSION);
+			$current['length'] = strlen($current['filename']);
+			$current['path'] = '/images/primer-grado/singular-y-plural/' . pathinfo($file, PATHINFO_FILENAME) . "." .$current['extension'];
+			array_push($images, $current);
+		}		
+	}
+
+	shuffle($images);
+	$images = array_slice($images, 0, 4);
+	
+	return json_encode($images);
+});
+
+
 /* ************************************************************************************************** */
 /* TERCER GRADO */
 /* ************************************************************************************************** */
