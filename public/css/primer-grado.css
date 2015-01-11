@@ -46,8 +46,13 @@ body{
 /* CAMINO */
 
 #big-letra{
-	font-size: 64px;
-	padding-top: 100px;
+	font-size: 50px;
+	/*padding-top: 100px;*/
+	display: inline-block;
+}
+
+.nicdark_btn.medium{
+	padding: 8px !important;
 }
 
 #camino-de-letras{
