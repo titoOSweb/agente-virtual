@@ -106,8 +106,6 @@ dd {
 					</div>
 
 					<div id="resultado" class="grid grid_4"></div>
-
-
 					<div class="letras grid grid_8 center"></div>
 				</div>
 

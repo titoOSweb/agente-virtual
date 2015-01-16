@@ -169,14 +169,19 @@ cursor: pointer;
 }
 
 
-
-
 .tablet {
 	background: url(../img/ipad.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	min-height: 75px;
 	min-width: 64px;
+	margin-top: 0;
+	font-size: 20px;
+}
+
+.tablet div{
+	font-size: 20px;
+	padding-top: 25px;
 }
 
 /* MAYOR MENOR */
