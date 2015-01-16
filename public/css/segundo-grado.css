@@ -235,7 +235,14 @@ a.black,
 }
 
 
-
+input.grande{
+	font-size: 48px;
+	border: 1px solid #ccc;
+	width: 160px;
+	height: 80px;
+	text-align: center;
+	margin-left: 50px;
+}
 
 
 
