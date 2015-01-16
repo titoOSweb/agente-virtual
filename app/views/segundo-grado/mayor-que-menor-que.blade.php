@@ -43,21 +43,50 @@
 		<div class="nicdark_space50"></div>
 
 		<div class="grid grid_8">
-
+<!--
 			<div class="nicdark_space50"></div>	
+-->
+			<div class="grid grid_3 ">
+				<div class="nicdark_alerts nicdark_bg_red nicdark_radius nicdark_shadow">
+					<p class="white nicdark_size_medium"><i class="icon-cancel-circled-outline iconclose"></i>&nbsp;&nbsp;&nbsp;<strong>Incorrectas:</strong>&nbsp;&nbsp;&nbsp;<span id="incorrectas">0</span></p>
+					<i class="icon-cancel-outline nicdark_iconbg right medium red"></i>
+				</div>
+			</div>
+
+			<div class="grid grid_3 right" style="float:right">
+				<div class="nicdark_alerts nicdark_bg_green nicdark_radius nicdark_shadow">
+					<p class="white nicdark_size_medium"><i class="icon-cancel-circled-outline iconclose"></i>&nbsp;&nbsp;&nbsp;<strong>Correctas:</strong>&nbsp;&nbsp;&nbsp;<span id="correctas">0</span></p>
+					<i class="icon-cancel-outline nicdark_iconbg right medium green"></i>
+				</div>
+			</div>
+
+
 
 			<div class="row">
 					
-				<div class="grid grid_8 center" align="center">
-					<div class="numeromm">12</div>
+				<div class="grid grid_8 center" id="operandos" align="center">
+					<hr>
+					<div class="numeromm" id="n1"></div>
 					<a href="#" class="nicdark_width50 nicdark_btn nicdark_bg_red extrasize  nicdark_radius white nicdark_margin10">?</a>
-					<div class="numeromm">64</div>
+					<div class="numeromm" id="n2"></div>
 					<hr>
 				</div>
 
+				<div class="grid grid_8 hide nicdark_textevidence nicdark_width_percentage100" id="correcto">
+					<hr>
+					<div class="nicdark_textevidence nicdark_relative"> <a href="#" class="nicdark_btn_icon nicdark_bg_green extrabig nicdark_radius white nicdark_absolute nicdark_shadow"><i class="icon-ok big"></i></a>
+						<div class="nicdark_activity nicdark_marginleft100">
+							<h1 style="font-size:60px;padding-top:10px">Muy bien</h1>
+							<div class="nicdark_space20"></div> <a href="/" class="nicdark_btn grey next-word"><i class="icon-right-open-outline"></i> Siguiente</a> 
+						</div>
+						<div class="nicdark_space20"></div>
+						<div class="nicdark_space20"></div>
+					</div>
+				</div>
+
 				<div class="grid grid_8 center" align="center">
-					<a href="#" title="Mayor que" class="nicdark_width50 nicdark_btn nicdark_bg_blue extrasize nicdark_radius white nicdark_margin10">></a>
-					<a href="#" title="Menor que" class="nicdark_width50 nicdark_btn nicdark_bg_green extrasize  nicdark_radius white nicdark_margin10"><</a>
+					<a href="#" id="mayor" title="Mayor que" class="nicdark_width50 nicdark_btn nicdark_bg_blue extrasize nicdark_radius white nicdark_margin10 calcular">></a>
+					<a href="#" id="menor" title="Menor que" class="nicdark_width50 nicdark_btn nicdark_bg_green extrasize  nicdark_radius white nicdark_margin10 calcular"><</a>
 				</div>
 
 			</div>	
@@ -80,3 +109,6 @@
 <!--end section-->
 @endsection
 
+@section('js')
+<script src="/js/mayor-que-menor-que.js"> </script>	
+@endsection
