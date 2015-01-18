@@ -61,7 +61,7 @@
 				<div class="grid grid_7 center" id="dameros-leyenda" align="center"></div>
 			</div>	
 
-			
+			<div id="resultado"></div>
 
 			<div class="nicdark_space50"></div>
 					

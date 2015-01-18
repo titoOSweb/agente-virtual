@@ -124,10 +124,10 @@
 	<!--end nicdark_container-->
 </section>
 <!--end section-->
+<input type="hidden" id="dificultad" value="10">
+<input type="hidden" id="tiempo" value="30">
 @endsection
 
 @section('js')
 <script src="/js/restar.js"></script>
 @endsection
-
-

@@ -1,7 +1,9 @@
 "use strict";
 
 var Timer = {
-	seg : 40,
+	seg : $("#tiempo").val(),
+	dificultad : $("#dificultad").val(),
+
 	countdown: function( elementName, seconds )
 	{
 		var element, endTime, hours, mins, msLeft, time;
@@ -52,7 +54,7 @@ var $n1 = $("#n1"),
 		res = 0;
 		var i = 0;
 		while(i<2){
-			var n = Math.floor((Math.random() * 10) + 1);
+			var n = Math.floor((Math.random() * Timer.dificultad) + 1);
 			var igual = false;
 			$.each(numeros, function(index, el) {
 				if(el == n){

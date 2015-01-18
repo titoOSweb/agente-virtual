@@ -68,9 +68,11 @@
 														
 						</ul>
 
-						<div class="nicdark_margin100">
-							<span id="reloj" class="nicdark_btn nicdark_bg_orange medium nicdark_radius white"><i class="icon-stopwatch"></i>&nbsp;&nbsp;120 seg</span>
-						</div>
+						<div class="grid grid_2" id="watch">
+
+						
+
+					</div>
 
 					</div>
 					

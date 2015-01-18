@@ -109,7 +109,7 @@
 							
 							
 							<li class="grey">
-								<a href="contact-1.php">MANUAL</a>
+								<a href="/manual.pdf" target="_blank">MANUAL</a>
 							</li>
 						</ul>
 					</nav>

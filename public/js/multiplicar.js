@@ -67,11 +67,11 @@ var $n1 = $("#n1"),
 				numeros.push(n);
 			}
 		};
-		numeros.sort(function(a, b){return a-b});
-		numeros.reverse();
+		//numeros.sort(function(a, b){return a-b});
+		//numeros.reverse();
 		$.each([$n1, $n2], function(index, el) {
 			el.text(numeros[index]);
-			res = res - numeros[index];
+			res = res * numeros[index];
 		});
 		index++;
 		if(index == 10){
@@ -93,7 +93,7 @@ $("#validar").on("click", function(event){
 	event.preventDefault();
 
 	var escrito = $(".grande").val();
-	res = parseInt($n1.text()) - parseInt($n2.text());
+	res = parseInt($n1.text()) * parseInt($n2.text());
 
 	//alert(escrito + " > " + res);
 	

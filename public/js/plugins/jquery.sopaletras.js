@@ -1,12 +1,76 @@
 ﻿//Creado por Rodrigo Mendez - www.impetu-it.com.ar
 /// <reference path="jquery-1.5.1.min.js" />
 
+
 (function ($) {
+
+    var Timer = {
+    seg : 120,
+    countdown: function( elementName, seconds )
+    {
+        var element, endTime, hours, mins, msLeft, time;
+
+        var w = $("#watch");
+        var randomId = Math.random();
+        var tpl = '<div class="nicdark_margin100"> <span id="reloj" class="nicdark_btn nicdark_bg_orange medium nicdark_radius white"><i class="icon-stopwatch"></i>&nbsp;&nbsp; <span id="'+randomId+'">'+this.seg+' seg</span></span> </div>';
+
+        w.html(tpl);
+
+        function twoDigits( n )
+        {
+            return (n <= 9 ? "0" + n : n);
+        }
+
+        function updateTimer()
+        {
+            msLeft = endTime - (+new Date);
+            if ( msLeft < 1000 ) {
+                incorrecto();
+                generarOperacion();
+            } else {
+                time = new Date( msLeft );
+                hours = time.getUTCHours();
+                mins = time.getUTCMinutes();
+                element.innerHTML = twoDigits( time.getUTCSeconds() ) + ' seg';
+                setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+            }
+        }
+
+        element = document.getElementById( randomId );
+        endTime = (+new Date) + 1000 * (seconds) + 500;
+        updateTimer();
+    }
+}
+
+
     Sopa = function ($el, options) {
         $t = $("<table border='1'>");
 
         var defaults = {
-            palabras: [{
+            palabras: [
+                { name: 'TROMPO'},
+                { name: 'ABEJA'},
+                { name: 'CARRO'},
+                { name: 'CALAMAR'},
+                { name: 'PELOTA'},
+                { name: 'MANGO'},
+                { name: 'ESTEBAN'},
+                { name: 'PERRO'},
+                { name: 'BALON'},
+                { name: 'FRESA'},
+                { name: 'MANUEL'},
+                { name: 'GATO'},
+                { name: 'TAMBOR'},
+                { name: 'MANZANA'},
+                { name: 'BICICLETA'},
+                { name: 'NARANJA'},
+                { name: 'JAVIER'},
+                { name: 'ARDILLA'},
+                { name: 'MUÑECA'},
+                { name: 'PATILLA'},
+                { name: 'DADOS'},
+
+            {
                 name: 'CARLOS'
             }, {
                 name: 'COLOMBIA'
@@ -73,10 +137,14 @@
         letras[26] = "Z";
 
         this.init = function () {
+            shuffle(defaults.palabras);
+            defaults.palabras.length = 8;
 
             var contadorpalabras = 0;
             var comienzoy = Math.floor((Math.random() * (defaults.complejo + 2)) - 1);
             var comienzoyar = new Array();
+            
+
             for (var i = 0; i < defaults.palabras.length; i++) {
                 var x = defaults.palabras[i].name;
                 $("#palabras").append('<li class="palabra-'+x+'">'+x+'</li>');
@@ -200,6 +268,8 @@
                         contadorpalabras++;
                     }
                 }
+
+                Timer.countdown( "timer", Timer.seg );
             }
 
             var posy = Math.floor((Math.random() * (defaults.complejo + 2)) - 1);
@@ -258,9 +328,7 @@
                     //$("td[pos='" + posx.toString() + ";" + posy.toString() + "']").html(defaults.palabras[v].name.charAt(i)).attr("nocruzar", "S").css("font-weight", "bold");
                     posy++;
                 }
-            }
-
-            
+            }            
         };
 
         var cantidadclicks = 0;
@@ -374,9 +442,10 @@
                             $g.cantidadpalabras();
                         }
                         $("td[class='']").addClass("noborrar");
-                        if (aciertos == defaults.palabras.length) {
+                        if (aciertos == defaults.palabras.length ) {
                             alert("Felicitaciones!!!. Has encontrado todas las palabras.");
-                            $g.onWin();
+                            //$g.onWin();
+                            location.href = '/';
                         }
                     }
                 });
@@ -431,7 +500,7 @@ this.onWin = function () { if (defaults.onWin != "") { eval(defaults.onWin + "('
 
 this.enabled = function () { dejapasar = true; }
 
-this.cantidadpalabras = function () { eval("nogano('" + aciertos + "')"); eval("noganopalabras('" + miradorpalabras + "')"); }
+this.cantidadpalabras = function () { return defaults.palabras.length; }
 
 this.init();
 };
@@ -445,3 +514,22 @@ $.fn.SopaLetras = function (options) {
     return sopas;
 };
 })(jQuery);
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}

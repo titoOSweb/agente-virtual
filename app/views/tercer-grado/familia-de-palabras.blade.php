@@ -53,7 +53,7 @@
 
 
 			<div class="row" id="step-1">
-				<div class="nicdark_alerts nicdark_bg_red nicdark_radius nicdark_shadow">
+				<div class="nicdark_alerts nicdark_bg_red nicdark_radius nicdark_shadow" id="win">
 					<p class="white nicdark_size_medium"><strong>Ejemplo:</strong> Casa/Casita/Caserón/Casona/Casucha/Caserio</p>
 					<i class="icon-warning-empty nicdark_iconbg right medium orange"></i>
 				</div>
@@ -62,10 +62,11 @@
 				<div id="familias" class="grid grid_8 center" align="center"></div>
 			
 				<div class="grid grid_8"><hr></div>
+				<a href="/" style="font-size:12px" class=" nicdark_btn nicdark_bg_red  nicdark_shadow nicdark_radius white nicdark_margin10">Salir	</a>
 
 				<div class="grid grid_8">
 					<div class="nicdark_textevidence center">
-						<a href="#" class="nicdark_zoom nicdark_btn nicdark_bg_blue extrasize nicdark_shadow nicdark_radius white nicdark_margin10">CABALLO</a>
+						<a href="#" class="nicdark_zoom nicdark_btn nicdark_bg_blue extrasize nicdark_shadow nicdark_radius white nicdark_margin10" id="verbo"></a>
 					</div>
 				</div>
 			</div>
