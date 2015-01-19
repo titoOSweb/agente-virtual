@@ -16,6 +16,20 @@ Route::get('/', function()
 	return View::make('home');
 });
 
+Route::get('/manual', function()
+{
+	
+$file = public_path().'/manual.pdf' ; // <- Replace with the path to your .pdf file
+if (file_exists($file)) {
+    $content = file_get_contents($file);
+
+   
+    return Response::make($content, 200, array('content-type'=>'application/pdf'));
+}
+});
+
+
+
 
 #Primer Grado
 Route::get('/primer-grado/aprende-el-abecedario', function()

@@ -109,7 +109,7 @@
 							
 							
 							<li class="grey">
-								<a href="/manual.pdf" target="_blank">MANUAL</a>
+								<a href="/manual/">MANUAL</a>
 							</li>
 						</ul>
 					</nav>
