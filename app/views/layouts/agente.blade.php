@@ -1,11 +1,14 @@
-<div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow">
+<div id="" class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow">
 	<div class="nicdark_textevidence nicdark_bg_orange nicdark_radius_top">
 		<h4 class="white nicdark_margin20">Virtual ED</h4>
 		<i class="icon-tags-1 nicdark_iconbg right medium orange"></i>
 	</div>
 
 	<div class="nicdark_margin10">
-		<img src="/agente/image.jpg" alt="">
+		<object width="360" height="360" id="agente">
+			<param name="movie" value="">
+			</embed>
+		</object>
 	</div>
 	
 </div>

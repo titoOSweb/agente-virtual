@@ -86,4 +86,13 @@
 </section>
 <!--end section-->
 @endsection
-
+@section('js')
+<script>
+$(document).on("ready", function(){
+	$(".letras-abecedario").on("click", function(){
+		Agente.prepare("a");
+	})
+})
+	
+</script>
+@endsection

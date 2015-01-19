@@ -93,6 +93,7 @@
 
 <!--settings-->
 <script src="/js/settings.js"></script> <!--settings-->
+<script src="/js/main/Agente.js"></script> <!--settings-->
 <!--custom js-->
 <script type="text/javascript">
 jQuery(document).ready(function() {
