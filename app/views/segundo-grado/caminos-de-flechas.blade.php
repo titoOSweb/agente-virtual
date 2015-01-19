@@ -56,7 +56,17 @@
 			</div>	
 
 			
-
+			<div class="grid grid_8 hide nicdark_textevidence nicdark_width_percentage100" id="correcto">
+					<div class="nicdark_textevidence nicdark_relative"> <a href="#" class="nicdark_btn_icon nicdark_bg_green extrabig nicdark_radius white nicdark_absolute nicdark_shadow"><i class="icon-ok big"></i></a>
+						<div class="nicdark_activity nicdark_marginleft100">
+							<h1 style="font-size:60px;padding-top:10px">Correcto</h1>
+							<div class="nicdark_space20"></div> <a href="/" class="nicdark_btn grey next-word"><i class="icon-right-open-outline"></i> Siguiente</a> 
+							<div class="nicdark_space20"></div> <a href="/" class="nicdark_btn grey reload"><i class="icon-reload"></i> Volver a jugar</a> 
+						</div>
+						<div class="nicdark_space20"></div>
+						<div class="nicdark_space20"></div>
+					</div>
+				</div>
 			<div class="nicdark_space50"></div>
 					
 		</div>
@@ -137,21 +147,10 @@ this.handleDrop = function(e) {
     		this.removeClassName('falta');
     		nivel++;
     		if(nivel == max){
-    			palabrear();
-    			var cols_ = document.querySelectorAll('.dnd');
-    			[].forEach.call(cols_, function (col) {
-    				col.setAttribute('draggable', 'true');  
-    				col.addEventListener('dragstart', this.handleDragStart, false);
-    				col.addEventListener('dragenter', this.handleDragEnter, false);
-    				col.addEventListener('dragover', this.handleDragOver, false);
-    				col.addEventListener('dragleave', this.handleDragLeave, false);
-    				col.addEventListener('drop', this.handleDrop, false);
-    				col.addEventListener('dragend', this.handleDragEnd, false);
-    			});
-    			totalizador++;
-    			if(totalizador==3){
-    				correcto();
-    			}
+    			
+    				Agente.correcto();
+    				$("#correcto").removeClass('hide');
+    			
     		}
     		
     	}else{
@@ -182,4 +181,10 @@ this.handleDragEnd = function(e) {
 
 })();
 </script>
+
+<script>
+	$( window ).load(function() {
+		Agente.prepare('introLevel10');
+	});
+	</script>
 @endsection

@@ -64,7 +64,7 @@
 				<?php $index = -1; ?>					
 				@endif
 
-				<a href="javascript:void(0)" data-imagen="/images/primer-grado/numeros/{{ $numero['numero'] }}.gif" data-descripcion="{{ $numero['descripcion'] }}" class="letras-abecedario extrasize nicdark_width50 nicdark_btn {{ $class }} medium nicdark_shadow nicdark_radius white nicdark_margin20">{{ $numero['numero'] }}</a>
+				<a href="javascript:void(0)" data-numero="n{{ $numero['numero'] }}" data-imagen="/images/primer-grado/numeros/{{ $numero['numero'] }}.gif" data-descripcion="{{ $numero['descripcion'] }}" class="numeros-abecedario extrasize nicdark_width50 nicdark_btn {{ $class }} medium nicdark_shadow nicdark_radius white nicdark_margin20">{{ $numero['numero'] }}</a>
 				<?php $index++; ?>
 				@endforeach
 			</div>
@@ -90,3 +90,10 @@
 <!--end section-->
 @endsection
 
+@section('js')
+	<script>
+	$( window ).load(function() {
+		Agente.prepare('introLevel2');
+	});
+	</script>
+@endsection

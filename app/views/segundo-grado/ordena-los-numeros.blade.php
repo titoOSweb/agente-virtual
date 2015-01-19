@@ -199,10 +199,12 @@ this.handleDrop = function(e) {
     		nivel++;
     		if(nivel == 4){
     			$("#correcto").removeClass('hide');
+    			Agente.correcto();
     		}else{
     		}
     		
     	}else{
+    		Agente.incorrecto();
     		$("#alerta").removeClass('hide');
     	}
     	
@@ -230,4 +232,11 @@ this.handleDragEnd = function(e) {
 
 })();
 </script>
+
+
+<script>
+	$( window ).load(function() {
+		Agente.prepare('introLevel12');
+	});
+	</script>
 @endsection

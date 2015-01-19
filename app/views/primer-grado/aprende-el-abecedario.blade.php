@@ -64,7 +64,12 @@
 				<?php $index = -1; ?>					
 				@endif
 
-				<a href="javascript:void(0)" data-imagen="/images/primer-grado/abecedario/{{ $letra['letra'] }}.jpg" data-descripcion="{{ $letra['descripcion'] }}" class="letras-abecedario extrasize nicdark_width50 nicdark_btn {{ $class }} medium nicdark_shadow nicdark_radius white nicdark_margin10">{{ $letra['letra'] }}</a>
+				@if($letra['letra'] == 'ñ')
+					<a href="javascript:void(0)" data-imagen="/images/primer-grado/abecedario/niu.jpg" data-letra="niu" data-descripcion="{{ $letra['descripcion'] }}" class="letras-abecedario extrasize nicdark_width50 nicdark_btn {{ $class }} medium nicdark_shadow nicdark_radius white nicdark_margin10">ñ</a>
+				@else
+					<a href="javascript:void(0)" data-imagen="/images/primer-grado/abecedario/{{ $letra['letra'] }}.jpg" data-letra="{{ $letra['letra'] }}" data-descripcion="{{ $letra['descripcion'] }}" class="letras-abecedario extrasize nicdark_width50 nicdark_btn {{ $class }} medium nicdark_shadow nicdark_radius white nicdark_margin10">{{ $letra['letra'] }}</a>
+				@endif
+
 				<?php $index++; ?>
 				@endforeach
 			</div>
@@ -86,13 +91,11 @@
 </section>
 <!--end section-->
 @endsection
+
 @section('js')
-<script>
-$(document).on("ready", function(){
-	$(".letras-abecedario").on("click", function(){
-		Agente.prepare("a");
-	})
-})
-	
-</script>
+	<script>
+	$( window ).load(function() {
+		Agente.prepare('introLevel1');
+	});
+	</script>
 @endsection

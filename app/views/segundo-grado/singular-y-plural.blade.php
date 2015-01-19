@@ -213,7 +213,7 @@ this.handleDrop = function(e) {
     		nivel++;
 
     		if(nivel == 4){
-    			location.href="/";
+    			Agente.correcto();
     		}
     	}else{
     		$("#alerta").removeClass('hide');
@@ -241,6 +241,9 @@ this.handleDragEnd = function(e) {
 });
 })();
 </script>
-
-</script>
+<script>
+	$( window ).load(function() {
+		Agente.prepare('introLevel9');
+	});
+	</script>
 @endsection

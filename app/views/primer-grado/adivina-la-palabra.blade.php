@@ -75,5 +75,14 @@
 @endsection
 
 @section('js')
+
+	<script>
+	$( window ).load(function() {
+		Agente.prepare('ahoraAdivinaPalabra');
+	});
+	</script>
+
 	<script src="/js/adivina-la-palabra.js"> </script>
+
+	
 @endsection

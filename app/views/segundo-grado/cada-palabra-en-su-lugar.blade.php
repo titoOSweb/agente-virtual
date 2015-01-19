@@ -193,6 +193,7 @@ this.handleDrop = function(e) {
 
     		nivel++;
     		if(nivel == 10){
+    			Agente.correcto();
     			$("#correcto").removeClass('hide');
     		}else{
     			palabrear();
@@ -225,5 +226,11 @@ this.handleDragEnd = function(e) {
 });
 
 })();
+</script>
+
+<script>
+$( window ).load(function() {
+	Agente.prepare('introLevel10');
+});
 </script>
 @endsection

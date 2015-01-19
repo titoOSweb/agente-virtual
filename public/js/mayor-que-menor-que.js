@@ -47,7 +47,7 @@ $(".calcular").on("click", function(event){
 
 	if(op == 'mayor'){
 		if(n1 > n2){
-			correcto();
+			correcto();			
 		}else{
 			incorrecto();
 		}
@@ -62,9 +62,11 @@ $(".calcular").on("click", function(event){
 })
 
 function correcto(){
+	Agente.correcto();
 	$correctas.text(($correctas.text() * 1) + 1);
 }
 function incorrecto(){
+	Agente.incorrecto();
 	$incorrectas.text(($incorrectas.text() * 1) + 1);
 }
 

@@ -114,6 +114,14 @@
                 };
 		$("#sopa").SopaLetras(sopaoption);
 		$("#sopa").SopaLetras("enabled");
+
+		Agente.prepare('sustantivos1');
+
+		setTimeout(function(){
+			Agente.prepare('sustantivos2');
+		},10000)
+
+		
 	});
 </script>
 @endsection

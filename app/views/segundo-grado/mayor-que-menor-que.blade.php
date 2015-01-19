@@ -111,4 +111,10 @@
 
 @section('js')
 <script src="/js/mayor-que-menor-que.js"> </script>	
+
+<script>
+	$( window ).load(function() {
+		Agente.prepare('introLevel13');
+	});
+	</script>
 @endsection

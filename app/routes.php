@@ -26,7 +26,7 @@ Route::get('/primer-grado/aprende-el-abecedario', function()
 
 Route::get('/primer-grado/aprende-los-numeros', function()
 {
-	$numeros = [["numero" => '1', 'descripcion' => 'Uno'], ["numero" => '2', 'descripcion' => 'Dos'], ["numero" => '3', 'descripcion' => 'Tres'], ["numero" => '4', 'descripcion' => 'Cuatro'], ["numero" => '5', 'descripcion' => 'Cinco'], ["numero" => '6', 'descripcion' => 'Seis'], ["numero" => '7', 'descripcion' => 'Siete'], ["numero" => '8', 'descripcion' => 'Ocho'], ["numero" => '9', 'descripcion' => 'Nueve'], ["numero" => '10', 'descripcion' => 'Diez'], ];
+	$numeros = [["numero" => '1', 'descripcion' => 'Uno'], ["numero" => '2', 'descripcion' => 'Dos'], ["numero" => '3', 'descripcion' => 'Tres'], ["numero" => '4', 'descripcion' => 'Cuatro'], ["numero" => '5', 'descripcion' => 'Cinco'], ["numero" => '6', 'descripcion' => 'Seis'], ["numero" => '7', 'descripcion' => 'Siete'], ["numero" => '8', 'descripcion' => 'Ocho'], ["numero" => '9', 'descripcion' => 'Nueve'] ];
 	return View::make('primer-grado.aprende-los-numeros', compact('numeros'));
 });
 

@@ -4,11 +4,8 @@
 		<i class="icon-tags-1 nicdark_iconbg right medium orange"></i>
 	</div>
 
-	<div class="nicdark_margin10">
-		<object width="360" height="360" id="agente">
-			<param name="movie" value="">
-			</embed>
-		</object>
+	<div class="nicdark_margin10" id="AgenteEd">
+		
 	</div>
 	
 </div>

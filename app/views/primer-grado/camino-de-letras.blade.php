@@ -197,6 +197,7 @@ this.handleDrop = function(e) {
     		this.removeClassName('falta')
     		nivel++;
     		if(nivel == 4){
+    			Agente.correcto();
     			$("#correcto").removeClass('hide');
     		}
 
@@ -231,4 +232,10 @@ this.handleDragEnd = function(e) {
 
 })();
 </script>
+
+<script>
+	$( window ).load(function() {
+		Agente.prepare('introLevel7');
+	});
+	</script>
 @endsection

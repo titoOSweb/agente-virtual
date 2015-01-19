@@ -130,4 +130,8 @@
 
 @section('js')
 <script src="/js/sumar.js"></script>
+
+<script>
+
+</script>
 @endsection

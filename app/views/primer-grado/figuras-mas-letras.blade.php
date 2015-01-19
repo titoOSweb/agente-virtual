@@ -190,6 +190,7 @@ this.handleDrop = function(e) {
     		this.value = e.dataTransfer.getData('text/html');
     		nivel++;
     		if(nivel == 4){
+    			Agente.correcto();
     			$("#correcto").removeClass('hide');
     		}
     		
@@ -221,4 +222,10 @@ this.handleDragEnd = function(e) {
 
 })();
 </script>
+
+<script>
+	$( window ).load(function() {
+		Agente.prepare('introLevel8');
+	});
+	</script>
 @endsection

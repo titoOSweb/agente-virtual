@@ -65,7 +65,7 @@
 				<?php $index = -1; ?>					
 				@endif
 
-				<a href="javascript:void(0)" data-imagen="/images/primer-grado/partes-computador/{{ $parte['imagen'] }}" 
+				<a href="javascript:void(0)" data-letra="{{ $parte['parte'] }}" data-imagen="/images/primer-grado/partes-computador/{{ $parte['imagen'] }}" 
 				data-descripcion="{{ $parte['parte'] }}" class="partes-computador extrasize nicdark_btn {{ $class }} medium 
 				nicdark_shadow nicdark_radius white nicdark_margin20"> 	{{ $parte['parte'] }} </a>
 
@@ -89,3 +89,10 @@
 <!--end section-->
 @endsection
 
+@section('js')
+	<script>
+	$( window ).load(function() {
+		Agente.prepare('introLevel4');
+	});
+	</script>
+@endsection

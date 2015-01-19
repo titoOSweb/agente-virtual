@@ -181,9 +181,14 @@ $("#familias").on("click", '.opcion', function(event){
 })
 
 function correcto(){
-	setTimeout(location.href='', 3000);
+	Agente.correcto();
+	setTimeout(function(){location.href='/'}, 7000);
 	$("#familias").empty();
 	$("#win").removeClass('nicdark_bg_red');
 	$("#win").addClass('nicdark_bg_green');
 	$("#win").html('<p class="white nicdark_size_medium"><strong>'+f.verbo+':</strong> '+algo+'</p> <i class="icon-ok nicdark_iconbg right medium orange"></i>');
 }
+
+$( window ).load(function() {
+	Agente.prepare('introLevel20');
+});

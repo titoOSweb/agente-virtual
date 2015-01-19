@@ -211,3 +211,10 @@
 <!--end section-->
 @endsection
 
+@section('js')
+	<script>
+	$( window ).load(function() {
+		Agente.prepare('introLevel3');
+	});
+	</script>
+@endsection

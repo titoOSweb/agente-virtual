@@ -30,6 +30,10 @@ dd {
 	display: none;
 }
 
+#limite{
+	font-size: 80px;
+}
+
 </style>
 @endsection
 
@@ -199,6 +203,7 @@ this.handleDrop = function(e) {
     		nivel++;
     		if(nivel == this.getAttribute('data-mayores')){
     			//alert("correcto");
+    			Agente.correcto();
     			$("#correcto").removeClass('hide');
     		}else{
     		}
@@ -231,4 +236,10 @@ this.handleDragEnd = function(e) {
 
 })();
 </script>
+
+<script>
+	$( window ).load(function() {
+		Agente.prepare('introLevel14');
+	});
+	</script>
 @endsection

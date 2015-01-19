@@ -215,7 +215,13 @@ this.handleDragEnd = function(e) {
     col.addEventListener('dragend', this.handleDragEnd, false);
 });
 })();
+
+
 </script>
 
+<script>
+$( window ).load(function() {
+	Agente.prepare('formemos');
+});
 </script>
 @endsection

@@ -107,9 +107,11 @@ $("#validar").on("click", function(event){
 })
 
 function correcto(){
+	Agente.correcto();
 	$correctas.text(($correctas.text() * 1) + 1);
 }
 function incorrecto(){
+	Agente.incorrecto();
 	$incorrectas.text(($incorrectas.text() * 1) + 1);
 }
 
@@ -131,4 +133,6 @@ function makeid()
 }
 
 
-
+$( window ).load(function() {
+	Agente.prepare('multiplicar');
+});

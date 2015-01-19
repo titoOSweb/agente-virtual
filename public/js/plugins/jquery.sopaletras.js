@@ -5,7 +5,7 @@
 (function ($) {
 
     var Timer = {
-    seg : 120,
+    seg : 240,
     countdown: function( elementName, seconds )
     {
         var element, endTime, hours, mins, msLeft, time;
@@ -25,15 +25,19 @@
         {
             msLeft = endTime - (+new Date);
             if ( msLeft < 1000 ) {
-                incorrecto();
-                generarOperacion();
+                Agente.incorrecto();
+                           // alert("Felicitaciones!!!. Has encontrado todas las palabras.");
+                            //$g.onWin();
+                            setTimeout(function(){
+                                location.href = '/';
+                            },5000)
             } else {
-                time = new Date( msLeft );
-                hours = time.getUTCHours();
-                mins = time.getUTCMinutes();
-                element.innerHTML = twoDigits( time.getUTCSeconds() ) + ' seg';
-                setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
-            }
+            time = new Date( msLeft );
+            hours = time.getUTCHours();
+            mins = time.getUTCMinutes();
+            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+        }
         }
 
         element = document.getElementById( randomId );
@@ -443,9 +447,13 @@
                         }
                         $("td[class='']").addClass("noborrar");
                         if (aciertos == defaults.palabras.length ) {
-                            alert("Felicitaciones!!!. Has encontrado todas las palabras.");
+                            Agente.prepare('completastep');
+                           // alert("Felicitaciones!!!. Has encontrado todas las palabras.");
                             //$g.onWin();
-                            location.href = '/';
+                            setTimeout(function(){
+                                location.href = '/';
+                            },5000)
+                            
                         }
                     }
                 });

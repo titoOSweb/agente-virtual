@@ -39,7 +39,7 @@ shuffle(palabras);
 
 var palabra = palabras[0].name;
 
-window.location.hash = palabra;
+//window.location.hash = palabra;
 var longitud = palabra.length;
 for (var i = 0; i< longitud; i++) {
 	var caracter = palabra.charAt(i);
@@ -104,6 +104,7 @@ $("input.entrada").on("keyup", function(e){
 })
 
 function correcto(){
+	Agente.correcto();
 	$("input").prop("disabled", true);
 	$("#dameros-leyenda").empty();
 	$("#resultado").html('<div class="nicdark_textevidence nicdark_width_percentage100" id="correcto"> <div class="nicdark_textevidence nicdark_relative"> <a href="#" class="nicdark_btn_icon nicdark_bg_green extrabig nicdark_radius white nicdark_absolute nicdark_shadow"><i class="icon-ok big"></i></a> <div class="nicdark_activity nicdark_marginleft100"> <h1 style="font-size:60px;padding-top:10px">Correcto</h1> <div class="nicdark_space20"></div>  <a href="#" class="nicdark_btn grey next-word"><i class="icon-right-open-outline"></i> Siguiente</a> </div> <div class="nicdark_space20"></div><div class="nicdark_space20"></div></div> </div>');	
@@ -115,7 +116,7 @@ function equivocado(){
 
 $("#resultado").on("click", ".next-word", function(event){
 	event.preventDefault();
-	location.href = "/";
+	location.href = "/tercer-grado/dameros";
 });
 
 
@@ -131,3 +132,7 @@ function shuffle(array) {
   }
   return array;
 }
+
+$( window ).load(function() {
+	Agente.prepare('introLevel18');
+});
