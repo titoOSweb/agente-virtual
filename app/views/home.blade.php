@@ -56,6 +56,10 @@
 <script>
 $( window ).load(function() {
 	Agente.prepare('bienvenido');
+
+	setTimeout(function(){
+		Agente.prepare('seleccionaUnGrado');
+	},5000)
 });
 </script>
 @endsection

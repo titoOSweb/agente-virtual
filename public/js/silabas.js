@@ -1,11 +1,16 @@
 "use strict";
 
+Element.prototype.hasClassName = function(name) {return new RegExp("(?:^|\\s+)" + name + "(?:\\s+|$)").test(this.className); };
+Element.prototype.addClassName = function(name) {if (!this.hasClassName(name)) {this.className = this.className ? [this.className, name].join(' ') : name; } };
+Element.prototype.removeClassName = function(name) {if (this.hasClassName(name)) {var c = this.className; this.className = c.replace(new RegExp("(?:^|\\s+)" + name + "(?:\\s+|$)", "g"), ""); } };
+
+
 $.ajaxSetup({
 	async: false,
 });
 
 var images;
-
+var comparar;
 $.get('/api/primer-grado/adivina-la-palabra', function(data) {
 	images = data;
 },'json');
@@ -14,9 +19,15 @@ $.get('/api/primer-grado/adivina-la-palabra', function(data) {
 
 function silabar(obj){
 	$("#image").prop('src', obj.path);
-
+	comparar = '';
 	var filename = obj.filename;
-	$(".letras").empty();
+	$.each(obj.silabas, function(index, val) {
+		comparar+=val + "-";
+	});
+
+	comparar = comparar.substring(0, comparar.length-1).toUpperCase();
+
+	$("#silabas").empty();
 
 	var counter = 0;	
 
@@ -46,65 +57,10 @@ function equivocado(){
 $("#resultado").on("click", ".next-word", function(event){
 	event.preventDefault();
 	index++;
-	if(index < 4){
-		silabar(images[index]);
-	}else{
-		location.href = "/";
-	}	
+		
 });
 
-/* ----------------------------- 
 
-var letras = new Array();
-letras[0] = "A";
-letras[1] = "B";
-letras[2] = "C";
-letras[3] = "D";
-letras[4] = "E";
-letras[5] = "F";
-letras[6] = "G";
-letras[7] = "H";
-letras[8] = "I";
-letras[9] = "J";
-letras[10] = "K";
-letras[11] = "L";
-letras[12] = "M";
-letras[13] = "N";
-letras[14] = "Ñ";
-letras[15] = "O";
-letras[16] = "P";
-letras[17] = "Q";
-letras[18] = "R";
-letras[19] = "S";
-letras[20] = "T";
-letras[21] = "U";
-letras[22] = "V";
-letras[23] = "W";
-letras[24] = "X";
-letras[25] = "Y";
-letras[26] = "Z";
-
-
-
-var palabra = "INTERNET";
-
-for (var i = 0; i< palabra.length; i++) {
-	var caracter = palabra.charAt(i);
-
-	//var x = buscarIndice(caracter);
-	var t = '<div class="letra"><span>'+caracter+'</span> </div>';
-
-	if(i< (palabra.length-1)){
-		t = t + '<div class="sep">/</div>';
-	}
-
-	$("#silabas").append(t);
-}
-
-function buscarIndice (letra){
-	return (letras.indexOf(letra)+1);
-}
-*/
 
 /* Trigger´s */
 
@@ -115,8 +71,32 @@ $("#silabas").on("click", "div.sep", function(event){
 	}else{
 		$(this).addClass('active')
 	}
+	var txt = '';
+	console.clear();
+	$.each($("#silabas div"), function(index, val) {
+		if(val.hasClassName('letra')){
+			txt+= $(this).children('span').text();
+		}else if(val.hasClassName('active')){
+			txt+= '-';
+		}
+	});
+
+	if(comparar == txt){	
+		Agente.correcto();
+		if(index < 3){			
+			index++;
+			silabar(images[index]);
+		}else{
+			setTimeout(function(){
+				location.href = "/";
+			},2000)
+		}
+	}
+
+	console.log(txt);
 	
 })
+
 
 $("#continuar").on("click", function(event){
 	event.preventDefault();
@@ -127,3 +107,8 @@ $("#continuar").on("click", function(event){
 
 	
 })
+
+$( window ).load(function() {
+	Agente.prepare('introLevel19');
+});
+

@@ -36,9 +36,7 @@ var Agente = {
 		correcto : {path: "/agente/correcto.swf"},
 		excelente : {path: "/agente/excelente.swf"},
 		intentaDeNuevo : {path: "/agente/intenta de nuevo.swf"},
-		seleccionaUnGrado : {
-			path: "/agente/selecciona un grado.swf"
-		},
+		seleccionaUnGrado : {path: "/agente/selecciona un grado.swf"},
 		seleccionaUnJuego : {
 			path: "/agente/selecciona un juego.swf"
 		},
@@ -136,7 +134,7 @@ var Agente = {
 		computadora: {
 			path: "/agente/3grado/Computadora, es una Herramienta Tecnologica que Permite Realizar Tareas.swf"
 		},
-		manera: {
+		introLevel19: {
 			path: "/agente/3grado/De esta Manera Puedes Separar en Silabas las Palabras.swf"
 		},
 		hardware: {
