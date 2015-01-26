@@ -3,9 +3,11 @@
 var Timer = {
 	seg : $("#tiempo").val(),
 	dificultad : $("#dificultad").val(),
+	timeout : null,
 
 	countdown: function( elementName, seconds )
 	{
+		clearTimeout(Agente.timeout);
 		var element, endTime, hours, mins, msLeft, time;
 
 		var w = $("#watch");
@@ -30,7 +32,7 @@ var Timer = {
 				hours = time.getUTCHours();
 				mins = time.getUTCMinutes();
 				element.innerHTML = twoDigits( time.getUTCSeconds() ) + ' seg';
-				setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+				Agente.timeout = setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
 			}
 		}
 

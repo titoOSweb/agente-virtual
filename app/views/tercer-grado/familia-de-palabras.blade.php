@@ -62,7 +62,7 @@
 				<div id="familias" class="grid grid_8 center" align="center"></div>
 			
 				<div class="grid grid_8"><hr></div>
-				<a href="/" style="font-size:12px" class=" nicdark_btn nicdark_bg_red  nicdark_shadow nicdark_radius white nicdark_margin10">Salir	</a>
+				
 
 				<div class="grid grid_8">
 					<div class="nicdark_textevidence center">

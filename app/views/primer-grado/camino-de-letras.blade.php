@@ -90,7 +90,7 @@ dd {
 					<div class="nicdark_textevidence nicdark_relative"> <a href="#" class="nicdark_btn_icon nicdark_bg_green extrabig nicdark_radius white nicdark_absolute nicdark_shadow"><i class="icon-ok big"></i></a>
 						<div class="nicdark_activity nicdark_marginleft100">
 							<h1 style="font-size:60px;padding-top:10px">Correcto</h1>
-							<div class="nicdark_space20"></div> <a href="/" class="nicdark_btn grey next-word"><i class="icon-right-open-outline"></i> Siguiente</a> 
+							<div class="nicdark_space20"></div> <a href="{{ URL::full() }}" class="nicdark_btn grey next-word"><i class="icon-right-open-outline"></i> Siguiente</a> 
 						</div>
 						<div class="nicdark_space20"></div>
 						<div class="nicdark_space20"></div>
@@ -147,6 +147,9 @@ var nivel = 0;
 	var cols_ = document.querySelectorAll('.dnd');
 	console.log(cols_)
 	var dragSrcEl_ = null;
+	var max = $("span.falta").length;
+
+	//alert(max);
 
 	this.handleDragStart = function(e) {
 		$("#alerta").addClass('hide');
@@ -196,7 +199,7 @@ this.handleDrop = function(e) {
     		this.innerHTML = dragSrcEl_.getAttribute('data-letra');
     		this.removeClassName('falta')
     		nivel++;
-    		if(nivel == 4){
+    		if(nivel == max){
     			Agente.correcto();
     			$("#correcto").removeClass('hide');
     		}

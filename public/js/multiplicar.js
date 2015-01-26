@@ -3,11 +3,14 @@
 var Timer = {
 	seg : $("#tiempo").val(),
 	dificultad : $("#dificultad").val(),
+	timeout : null,
 
 	countdown: function( elementName, seconds )
 	{
+		clearTimeout(Agente.timeout);
+		
 		var element, endTime, hours, mins, msLeft, time;
-
+		
 		var w = $("#watch");
 		var randomId = makeid();
 		var tpl = '<div class="nicdark_margin100"> <span id="reloj" class="nicdark_btn nicdark_bg_orange medium nicdark_radius white"><i class="icon-stopwatch"></i>&nbsp;&nbsp; <span id="'+randomId+'">'+this.seg+' seg</span></span> </div>';
@@ -30,7 +33,7 @@ var Timer = {
 				hours = time.getUTCHours();
 				mins = time.getUTCMinutes();
 				element.innerHTML = twoDigits( time.getUTCSeconds() ) + ' seg';
-				setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+				Agente.timeout = setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
 			}
 		}
 
@@ -42,31 +45,31 @@ var Timer = {
 
 
 var $n1 = $("#n1"),
-	$n2 = $("#n2"),
-	$incorrectas = $("#incorrectas"),
-	$correctas = $("#correctas"),
-	$mayor = $("#mayor"),
-	$menor = $("#menor"),
-	index = 0,
-	res=0;
+$n2 = $("#n2"),
+$incorrectas = $("#incorrectas"),
+$correctas = $("#correctas"),
+$mayor = $("#mayor"),
+$menor = $("#menor"),
+index = 0,
+res=0;
 
-	function generarOperacion(){
-		var numeros = [];
-		res = 0;
-		var i = 0;
-		while(i<2){
-			var n = Math.floor((Math.random() * 10) + 1);
-			var igual = false;
-			$.each(numeros, function(index, el) {
-				if(el == n){
-					igual = true;
-				}
-			});
-			if(!igual){
-				i++;
-				numeros.push(n);
+function generarOperacion(){
+	var numeros = [];
+	res = 0;
+	var i = 0;
+	while(i<2){
+		var n = Math.floor((Math.random() * 10) + 1);
+		var igual = false;
+		$.each(numeros, function(index, el) {
+			if(el == n){
+				igual = true;
 			}
-		};
+		});
+		if(!igual){
+			i++;
+			numeros.push(n);
+		}
+	};
 		//numeros.sort(function(a, b){return a-b});
 		//numeros.reverse();
 		$.each([$n1, $n2], function(index, el) {
@@ -87,13 +90,13 @@ var $n1 = $("#n1"),
 	function validar(){
 
 	}
-/* TRIGGER´s */
+	/* TRIGGER´s */
 
-$("#validar").on("click", function(event){
-	event.preventDefault();
+	$("#validar").on("click", function(event){
+		event.preventDefault();
 
-	var escrito = $(".grande").val();
-	res = parseInt($n1.text()) * parseInt($n2.text());
+		var escrito = $(".grande").val();
+		res = parseInt($n1.text()) * parseInt($n2.text());
 
 	//alert(escrito + " > " + res);
 	
@@ -106,33 +109,33 @@ $("#validar").on("click", function(event){
 	$(".grande").val('');
 })
 
-function correcto(){
-	Agente.correcto();
-	$correctas.text(($correctas.text() * 1) + 1);
-}
-function incorrecto(){
-	Agente.incorrecto();
-	$incorrectas.text(($incorrectas.text() * 1) + 1);
-}
+	function correcto(){
+		Agente.correcto();
+		$correctas.text(($correctas.text() * 1) + 1);
+	}
+	function incorrecto(){
+		Agente.incorrecto();
+		$incorrectas.text(($incorrectas.text() * 1) + 1);
+	}
 
-function fin(){
-	$("#operandos").remove();
-	$("#correcto").removeClass('hide');
-}
-/* TIMER */
+	function fin(){
+		$("#operandos").remove();
+		$("#correcto").removeClass('hide');
+	}
+	/* TIMER */
 
-function makeid()
-{
-    var text = "";
-    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	function makeid()
+	{
+		var text = "";
+		var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-    for( var i=0; i < 5; i++ )
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
+		for( var i=0; i < 5; i++ )
+			text += possible.charAt(Math.floor(Math.random() * possible.length));
 
-    return text;
-}
+		return text;
+	}
 
 
-$( window ).load(function() {
-	Agente.prepare('multiplicar');
-});
+	$( window ).load(function() {
+		Agente.prepare('multiplicar');
+	});

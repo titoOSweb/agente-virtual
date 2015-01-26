@@ -451,7 +451,7 @@
                            // alert("Felicitaciones!!!. Has encontrado todas las palabras.");
                             //$g.onWin();
                             setTimeout(function(){
-                                location.href = '/';
+                                location.href = '/tercer-grado/sustantivos';
                             },5000)
                             
                         }

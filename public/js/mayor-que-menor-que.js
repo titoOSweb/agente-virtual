@@ -25,7 +25,7 @@ var $n1 = $("#n1"),
 				numeros.push(n);
 			}
 		};
-		numeros.sort(function(a, b){return a-b});
+		//numeros.sort(function(a, b){return a-b});
 		$.each([$n1, $n2], function(index, el) {
 			el.text(numeros[index]);
 		});

@@ -88,7 +88,7 @@ $("#silabas").on("click", "div.sep", function(event){
 			silabar(images[index]);
 		}else{
 			setTimeout(function(){
-				location.href = "/";
+				location.href = "/tercer-grado/silabas";
 			},2000)
 		}
 	}

@@ -112,7 +112,7 @@ $("#resultado").on("click", ".next-word", function(event){
 	if(index < 4){
 		adivinar(images[index]);
 	}else{
-		location.href = "/";
+		location.href = "/primer-grado/adivina-la-palabra";
 	}
 	
 });

@@ -97,7 +97,7 @@ dd {
 					<div class="nicdark_textevidence nicdark_relative"> <a href="#" class="nicdark_btn_icon nicdark_bg_green extrabig nicdark_radius white nicdark_absolute nicdark_shadow"><i class="icon-ok big"></i></a>
 						<div class="nicdark_activity nicdark_marginleft100">
 							<h1 style="font-size:60px;padding-top:10px">Correcto</h1>
-							<div class="nicdark_space20"></div> <a href="/" class="nicdark_btn grey next-word"><i class="icon-right-open-outline"></i> Siguiente</a> 
+							<div class="nicdark_space20"></div> <a href="{{ URL::full() }}" class="nicdark_btn grey next-word"><i class="icon-right-open-outline"></i> Siguiente</a> 
 						</div>
 						<div class="nicdark_space20"></div>
 						<div class="nicdark_space20"></div>
@@ -191,7 +191,8 @@ this.handleDrop = function(e) {
     if (dragSrcEl_ != this) {
     	//if the type is equal
     	//alert(dragSrcEl_.getAttribute('data-letra') +" == "+  this.getAttribute('data-letra'));
-    	if(dragSrcEl_.getAttribute('data-numero') > this.getAttribute('data-limite')){
+    	//alert(dragSrcEl_.getAttribute('data-numero') + " -> " + this.getAttribute('data-limite'));
+    	if(parseInt(dragSrcEl_.getAttribute('data-numero')) > parseInt(this.getAttribute('data-limite'))){
     		//dragSrcEl_.innerHTML = this.
     		//this.innerHTML = dragSrcEl_.getAttribute('data-letra');
 
@@ -201,14 +202,16 @@ this.handleDrop = function(e) {
     		dragSrcEl_.remove();
 
     		nivel++;
+    		Agente.correcto();
     		if(nivel == this.getAttribute('data-mayores')){
     			//alert("correcto");
-    			Agente.correcto();
+    			
     			$("#correcto").removeClass('hide');
     		}else{
     		}
     		
     	}else{
+    		Agente.incorrecto();
     		$("#alerta").removeClass('hide');
     	}
     	

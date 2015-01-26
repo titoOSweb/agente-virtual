@@ -73,7 +73,10 @@ dd {
 
 		<div class="grid grid_8">
 
-			<div class="nicdark_space50"></div>	
+			<h1 class="subtitle greydark">Ordena los números de menor a mayor:</h1>
+			<div class="nicdark_space20"></div>
+			<div class="nicdark_divider left small"><span class="nicdark_bg_yellow nicdark_radius"></span></div>
+			<div class="nicdark_space20"></div>
 
 			<div class="row">
 				<div id="ordena-los-numeros" class="grid grid_8" align="center">

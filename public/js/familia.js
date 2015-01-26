@@ -161,6 +161,7 @@ $("#familias").on("click", '.opcion', function(event){
 	var is = $(this).attr('data-familia');
 
 	if(is == 'true'){
+		Agente.correcto();
 		aciertos++;
 		$(this).removeClass('nicdark_bg_grey');
 		$(this).addClass('nicdark_bg_green');
@@ -172,6 +173,7 @@ $("#familias").on("click", '.opcion', function(event){
 			correcto();
 		}	
 	}else{
+		Agente.incorrecto();
 		$(this).removeClass('nicdark_bg_grey');
 		$(this).addClass('nicdark_bg_red');
 
@@ -182,7 +184,7 @@ $("#familias").on("click", '.opcion', function(event){
 
 function correcto(){
 	Agente.correcto();
-	setTimeout(function(){location.href='/'}, 7000);
+	setTimeout(function(){location.href='/tercer-grado/familia-de-palabras'}, 5000);
 	$("#familias").empty();
 	$("#win").removeClass('nicdark_bg_red');
 	$("#win").addClass('nicdark_bg_green');
