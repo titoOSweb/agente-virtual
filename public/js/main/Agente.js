@@ -159,6 +159,34 @@ var Agente = {
 		wifi: {
 			path: "/agente/3grado/Wi-Fi, este Permite Hacer uso del Internet a Traves de Medios Inalambricos.swf"
 		},
+
+		circulo: {
+			path: "/agente/figuras/CIRCULO.swf"
+		},
+		cuadrado: {
+			path: "/agente/figuras/CUADRADO.swf"
+		},
+		hexagono: {
+			path: "/agente/figuras/HEXAGONO.swf"
+		},
+		octagono: {
+			path: "/agente/figuras/OCTAGONO.swf"
+		},
+		ovalo: {
+			path: "/agente/figuras/OVALO.swf"
+		},
+		pentagono: {
+			path: "/agente/figuras/PENTAGONO.swf"
+		},
+		rectangulo: {
+			path: "/agente/figuras/RECTANGULO.swf"
+		},
+		rombo: {
+			path: "/agente/figuras/ROMBO.swf"
+		},
+		triangulo: {
+			path: "/agente/figuras/TRIANGULO.swf"
+		},
 	},
 
 	shuffle: function(array) {

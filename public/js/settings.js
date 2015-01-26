@@ -300,6 +300,9 @@
 				type: 'inline'
 			}
 		});
+
+		var x = $(this).attr('data-agente').toLowerCase();
+		Agente.prepare(x);
 	});
 
 
