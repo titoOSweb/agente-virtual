@@ -5,13 +5,25 @@
 		<div class="nicdark_section nicdark_bg_greydark nicdark_displaynone_responsive">
 			<div class="nicdark_container nicdark_clearfix">
 				<div class="grid grid_6">
-					<div class="nicdark_focus">
-						
-					</div>
+
 				</div>
 				<div class="grid grid_6 right">
-					
+					<div class="nicdark_focus right">
+						<h6 class="white">    
+
+							@if(Auth::user())
+							<i class="icon-user"></i>&nbsp;&nbsp;<a class="white" href="/dashboard">{{ Auth::user()->full_name }}</a>
+							@else
+							<i class="icon-lock-1"></i>&nbsp;&nbsp;<a class="white nicdark_mpopup_ajax" href="/auth/login/modal">LOG IN</a>
+							@endif
+
+
+
+						</h6>
+					</div>
 				</div>
+
+
 
 			</div>
 		</div>
@@ -52,7 +64,7 @@
 											</li>
 											<li>
 												<img src="/images/sidebar/formas.jpg" alt="">
-												<a href="/primer-grado/aprende-las-formas-geometricas">Aprende las formas geometricas</a>
+												<a href="/primer-grado/aprende-las-formas-geometricas">Aprende las formas geométricas</a>
 											</li>
 											<li>
 												<img src="/images/sidebar/computador.png" alt="">
@@ -146,7 +158,7 @@
 											</li>
 											<li>
 												<img src="/images/sidebar/silabas.png" alt="">
-												<a href="/tercer-grado/silabas">Silabas</a>
+												<a href="/tercer-grado/silabas">Sílabas</a>
 											</li>
 											<li>
 												<img src="/images/sidebar/familia.jpg" alt="">

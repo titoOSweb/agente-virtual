@@ -1,5 +1,18 @@
 "use strict";
 
+debugger;
+
+$.ajaxSetup({
+	async: false,
+});
+
+var palabras;
+
+$.post('/api/segundo-grado/cada-palabra-en-su-lugar', function(data) {
+	palabras = data;
+},'json');
+
+
 var letras = new Array();
 letras[0] = "A";
 letras[1] = "B";
@@ -33,11 +46,9 @@ $.each(letras, function(index, val) {
 	$("#dameros-leyenda").append('<div> <span class="up">'+val+'</span> <span class="down">'+(index+1)+'</span> </div>')
 });
 
-var palabras = [{ name: 'TROMPO'}, { name: 'ABEJA'}, { name: 'CARRO'}, { name: 'CALAMAR'}, { name: 'PELOTA'}, { name: 'MANGO'}, { name: 'ESTEBAN'}, { name: 'PERRO'}, { name: 'BALON'}, { name: 'FRESA'}, { name: 'MANUEL'}, { name: 'GATO'}, { name: 'TAMBOR'}, { name: 'MANZANA'}, { name: 'BICICLETA'}, { name: 'NARANJA'}, { name: 'JAVIER'}, { name: 'ARDILLA'}, { name: 'MUÑECA'}, { name: 'PATILLA'}, { name: 'DADOS'}, {name: 'CARLOS'}, {name: 'COLOMBIA'}, {name: 'BRASIL'}, {name: 'VENEZUELA'}, {name: 'PAULA'}, {name: 'MANUEL'}, {name: 'CABIMAS'}, {name: 'MARACAIBO'}, {name: 'MERIDA'}, {name: 'ISABEL'}, {name: 'JOSE'}, {name: 'MARIA'}];
+shuffle(palabras.opciones);
 
-shuffle(palabras);
-
-var palabra = palabras[0].name;
+var palabra = palabras.opciones[0].palabra;
 
 //window.location.hash = palabra;
 var longitud = palabra.length;

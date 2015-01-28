@@ -1,137 +1,15 @@
 "use strict";
 
-var palabras = {
-	opciones : [
-		{
-			palabra: 'ELI',
-			tipo: 'N'
-		},
-		{
-			palabra: 'OSO',
-			tipo: 'A'
-		},
-		{
-			palabra: 'TROMPO',
-			tipo: 'J'
-		},
-		{
-			palabra: 'UVA',
-			tipo: 'F'
-		},
-		{
-			palabra: 'JOSE',
-			tipo: 'N'
-		},
-		{
-			palabra: 'ABEJA',
-			tipo: 'A'
-		},
-		{
-			palabra: 'CARRO',
-			tipo: 'J'
-		},
-		{
-			palabra: 'PERA',
-			tipo: 'F'
-		},
-		{
-			palabra: 'JUAN',
-			tipo: 'N'
-		},
-		{
-			palabra: 'CALAMAR',
-			tipo: 'A'
-		},
-		{
-			palabra: 'PELOTA',
-			tipo: 'J'
-		},
-		{
-			palabra: 'MANGO',
-			tipo: 'F'
-		},	
-		{
-			palabra: 'ESTEBAN',
-			tipo: 'N'
-		},
-		{
-			palabra: 'PERRO',
-			tipo: 'A'
-		},
-		{
-			palabra: 'BALON',
-			tipo: 'J'
-		},
-		{
-			palabra: 'FRESA',
-			tipo: 'F'
-		},	
-		{
-			palabra: 'MANUEL',
-			tipo: 'N'
-		},
-		{
-			palabra: 'GATO',
-			tipo: 'A'
-		},
-		{
-			palabra: 'TAMBOR',
-			tipo: 'J'
-		},
-		{
-			palabra: 'MANZANA',
-			tipo: 'F'
-		},
-		{
-			palabra: 'RAFAEL',
-			tipo: 'N'
-		},
-		{
-			palabra: 'PATO',
-			tipo: 'A'
-		},
-		{
-			palabra: 'BICICLETA',
-			tipo: 'J'
-		},
-		{
-			palabra: 'NARANJA',
-			tipo: 'F'
-		},
-		{
-			palabra: 'JAVIER',
-			tipo: 'N'
-		},
-		{
-			palabra: 'ARDILLA',
-			tipo: 'A'
-		},
-		{
-			palabra: 'MUÑECA',
-			tipo: 'J'
-		},
-		{
-			palabra: 'PATILLA',
-			tipo: 'F'
-		},
-		{
-			palabra: 'MARIA',
-			tipo: 'N'
-		},
-		{
-			palabra: 'PEZ',
-			tipo: 'A'
-		},
-		{
-			palabra: 'DADOS',
-			tipo: 'J'
-		},
-		{
-			palabra: 'COCO',
-			tipo: 'F'
-		},
-	]
-}
+$.ajaxSetup({
+	async: false,
+});
+
+var palabras;
+
+$.post('/api/segundo-grado/cada-palabra-en-su-lugar', function(data) {
+	palabras = data;
+},'json');
+
 
 var $cdesl = $("h1.dnd");
 var tpl, index=0;

@@ -46,7 +46,7 @@
 
 			<div class="nicdark_space50"></div>
 
-			<h1 class="subtitle greydark">Remplaza los numeros:</h1>
+			<h1 class="subtitle greydark">Remplaza los números:</h1>
 			<div class="nicdark_space20"></div>
 			<div class="nicdark_divider left small"><span class="nicdark_bg_yellow nicdark_radius"></span></div>
 			<div class="nicdark_space20"></div>

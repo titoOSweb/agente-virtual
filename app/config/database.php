@@ -55,14 +55,14 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'forge',
+			'database'  => 'agentevirtual',
 			'username'  => 'forge',
-			'password'  => '',
+			'password'  => 'aIxQq4AdfmvibVD3VeR2',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
-
+		
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',

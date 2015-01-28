@@ -1,5 +1,43 @@
 <?php
+/* -------------------------------------------------- */
+/* Auth Links */
 
+Route::get('/auth/login', ['as' => 'login', 'uses' => 'AuthController@showLogin']);
+Route::get('/auth/login/modal', ['as' => 'login', 'uses' => 'AuthController@showModalLogin']);
+
+Route::post('/auth/login', ['as' => 'login', 'uses' => 'AuthController@login']);
+
+Route::get('/auth/forgot', ['uses' => 'AuthController@showForgot']);
+Route::post('/auth/forgot', ['uses' => 'RemindersController@postRemind']);
+
+Route::get('/auth/forgot/{token}', ['uses' => 'RemindersController@getReset']);
+Route::post('/auth/forgot/reset', ['uses' => 'RemindersController@postReset']);
+
+Route::get('/auth/logout', ['uses' => 'AuthController@logout']);
+
+/* :Auth Links */
+/* -------------------------------------------------- */
+
+// Paneles
+Route::group(['before' => 'auth'], function () {
+
+	if(Auth::user()){
+		require (__DIR__ . '/routes/user.php');
+	}   
+
+});
+
+// Error Handle
+
+App::missing(function($exception)
+{
+	if(Auth::user()){
+		//return Redirect::to('/panel')->with('alert', ['type' => 'danger', 'message' => 'Ocurrio un extraño error, intenta de nuevo.']);
+	}else{
+		return Redirect::to('/auth/login')->with('alert', ['type' => 'danger', 'message' => 'Ocurrio un extraño error, intenta de nuevo.']);
+	}
+    
+});
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -59,7 +97,7 @@ Route::get('/primer-grado/partes-computador', function()
 /* 30-12-2014 */
 Route::get('/api/primer-grado/adivina-la-palabra', function()
 {	
-	$images = [];
+	/*$images = [];
 
 	$files = File::allFiles(public_path(). '/images/primer-grado/adivina-la-palabra');
 	foreach ($files as $file)
@@ -75,6 +113,24 @@ Route::get('/api/primer-grado/adivina-la-palabra', function()
 			$current['path'] = '/images/primer-grado/adivina-la-palabra/' . pathinfo($file, PATHINFO_FILENAME) . "." .$current['extension'];
 			array_push($images, $current);
 		}		
+	}*/
+
+
+
+	$images = [];
+
+	$silabas = Palabra::type('silabas')->get();
+	foreach ($silabas as $silaba)
+	{
+		$file = $silaba->imagen;
+
+		$current = [];
+		$current['filename'] = $silaba->palabra;
+		$current['silabas'] = explode("-",$silaba->silabas);
+		$current['extension'] = pathinfo($file, PATHINFO_EXTENSION);
+		$current['length'] = strlen($current['filename']);
+		$current['path'] = $silaba->imagen;
+		array_push($images, $current);				
 	}
 
 	shuffle($images);
@@ -109,20 +165,20 @@ Route::get('/api/primer-grado/figuras-mas-letras', function()
 {	
 	$images = [];
 
-	$files = File::allFiles(public_path(). '/images/primer-grado/figuras-mas-letras');
-	foreach ($files as $file)
+	$silabas = Palabra::type('figura')->get();
+
+	//$files = File::allFiles(public_path(). '/images/primer-grado/figuras-mas-letras');
+	foreach ($silabas as $silaba)
 	{
-		//File::move(public_path(). '/images/primer-grado/adivina-la-palabra/'.pathinfo($file, PATHINFO_BASENAME), public_path(). '/images/primer-grado/adivina-la-palabra/'.str_replace("+", "_",pathinfo($file, PATHINFO_BASENAME)));
-		$extension = pathinfo($file, PATHINFO_EXTENSION);
-		if($extension == 'jpg'){
-			$current = [];
-			$current['filename'] = pathinfo($file, PATHINFO_FILENAME);
-			$current['vocal'] = strtoupper($current['filename'][0]);
-			$current['extension'] = pathinfo($file, PATHINFO_EXTENSION);
-			$current['length'] = strlen($current['filename']);
-			$current['path'] = '/images/primer-grado/figuras-mas-letras/' . pathinfo($file, PATHINFO_FILENAME) . "." .$current['extension'];
-			array_push($images, $current);
-		}		
+		$file = $silaba->imagen;
+
+		$current = [];
+		$current['filename'] = $silaba->palabra;
+		$current['vocal'] = strtoupper($current['filename'][0]);
+		$current['extension'] = pathinfo($file, PATHINFO_EXTENSION);
+		$current['length'] = strlen($current['filename']);
+		$current['path'] = $silaba->imagen;
+		array_push($images, $current);				
 	}
 
 	shuffle($images);
@@ -181,22 +237,19 @@ Route::get('/api/segundo-grado/singular-y-plural', function()
 {	
 	$images = [];
 
+	$sorps = Palabra::type('sorp')->get();
+
 	$files = File::allFiles(public_path(). '/images/primer-grado/singular-y-plural');
-	foreach ($files as $file)
+	foreach ($sorps as $sorp)
 	{
-		//File::move(public_path(). '/images/primer-grado/adivina-la-palabra/'.pathinfo($file, PATHINFO_BASENAME), public_path(). '/images/primer-grado/adivina-la-palabra/'.str_replace("+", "_",pathinfo($file, PATHINFO_BASENAME)));
-		$extension = pathinfo($file, PATHINFO_EXTENSION);
-		
-		
-		if($extension == 'jpg'){
-			$current = [];
-			$current['filename'] = pathinfo($file, PATHINFO_FILENAME);
-			$current['sorp'] = (strtolower(substr($current['filename'],-1)) == 's') ? 'plural' : 'singular';
-			$current['extension'] = pathinfo($file, PATHINFO_EXTENSION);
-			$current['length'] = strlen($current['filename']);
-			$current['path'] = '/images/primer-grado/singular-y-plural/' . pathinfo($file, PATHINFO_FILENAME) . "." .$current['extension'];
-			array_push($images, $current);
-		}		
+		$file = $sorp->imagen;
+		$current = [];
+		$current['filename'] = pathinfo($file, PATHINFO_FILENAME);
+		$current['sorp'] = $sorp->sorp;
+		$current['extension'] = pathinfo($file, PATHINFO_EXTENSION);
+		$current['length'] = strlen($current['filename']);
+		$current['path'] = $sorp->imagen;
+		array_push($images, $current);				
 	}
 
 	shuffle($images);

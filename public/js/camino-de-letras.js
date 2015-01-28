@@ -1,149 +1,15 @@
 "use strict";
 
-var camino = {
-	opciones : [
-		{
-			palabra: '_ELA',
-			letra: 'V'
-		},
-		{
-			palabra: '_IÑEDO',
-			letra: 'V'
-		},
-		{
-			palabra: '_ELON',
-			letra: 'V'
-		},
-		{
-			palabra: 'A_ION',
-			letra: 'V'
-		},
-		{
-			palabra: 'PA_O',
-			letra: 'V'
-		},
-		{
-			palabra: 'A_ENA',
-			letra: 'V'
-		},
-		{
-			palabra: 'A_ISO',
-			letra: 'V'
-		},
-		{
-			palabra: 'A_IADOR',
-			letra: 'V'
-		},
-		{
-			palabra: 'A_IONETA',
-			letra: 'V'
-		},
-		{
-			palabra: '_ALON',
-			letra: 'B'
-		},
-		{
-			palabra: 'A_UELA',
-			letra: 'B'
-		},
-		{
-			palabra: 'A_EJA',
-			letra: 'B'
-		},
-		{
-			palabra: '_ARCO',
-			letra: 'B'
-		},
-		{
-			palabra: '_OM_ERO',
-			letra: 'B'
-		},
-		{
-			palabra: 'SOM_RERO',
-			letra: 'B'
-		},
-		{
-			palabra: '_OM_A',
-			letra: 'B'
-		},
-		{
-			palabra: '_ASTON',
-			letra: 'B'
-		},
-		{
-			palabra: 'CA_ALLO',
-			letra: 'B'
-		},
-		{
-			palabra: 'CA_ALGAR',
-			letra: 'B'
-		},
-		{
-			palabra: '_ASA',
-			letra: 'C'
-		},
-		{
-			palabra: '_AS_ADA',
-			letra: 'C'
-		},
-		{
-			palabra: 'HA_ER',
-			letra: 'C'
-		},
-		{
-			palabra: 'A_ERTAR',
-			letra: 'C'
-		},
-		{
-			palabra: 'A_LARAR',
-			letra: 'C'
-		},
-		{
-			palabra: 'A_ORDE',
-			letra: 'C'
-		},
-		{
-			palabra: 'A_UERDO',
-			letra: 'C'
-		},
-		{
-			palabra: '_ERDO',
-			letra: 'C'
-		},
-		{
-			palabra: 'CA_A',
-			letra: 'S'
-		},
-		{
-			palabra: '_APO',
-			letra: 'S'
-		},
-		{
-			palabra: '_ACAR',
-			letra: 'S'
-		},
-		{
-			palabra: 'E_CONDITE',
-			letra: 'S'
-		},
-		{
-			palabra: 'E_CHUCHAR',
-			letra: 'S'
-		},
-		{
-			palabra: 'E_PERAR',
-			letra: 'S'
-		},
-		{
-			palabra: 'E_TORNUDAR',
-			letra: 'S'
-		},
-		{
-			palabra: '_OPA',
-			letra: 'S'
-		}
-	]
-}
+$.ajaxSetup({
+	async: false,
+});
+
+var camino;
+
+$.post('/api/primer-grado/camino-de-letras', function(data) {
+	camino = data;
+},'json');
+
 
 var $cdl = $("#camino-de-letras");
 var tpl;

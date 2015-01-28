@@ -154,7 +154,7 @@
 				<div class="nicdark_space100"></div>
 				<h1 class="white subtitle">PRIMER GRADO</h1>
 				<div class="nicdark_space10"></div>
-				<h3 class="subtitle white">APRENDE LAS FORMAS GEOMETRICAS</h3>
+				<h3 class="subtitle white">APRENDE LAS FORMAS GEOMÉTRICAS</h3>
 				<div class="nicdark_space20"></div>
 				<div class="nicdark_divider left big"><span class="nicdark_bg_white nicdark_radius"></span></div>
 				<div class="nicdark_space40"></div>
@@ -187,14 +187,14 @@
 			<div class="nicdark_space20"></div>
 
 			<div class="row">
-				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/1.gif" data-agente="Circulo" data-descripcion="Circulo" class="formas-geometricas extrasize nicdark_btn nicdark_bg_green medium nicdark_shadow nicdark_radius white nicdark_margin20"> 	<div id="circulo" class="margen"></div> </a>
-				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/2.gif" data-agente="Ovalo" data-descripcion="Ovalo" class="formas-geometricas extrasize nicdark_btn nicdark_bg_blue medium nicdark_shadow nicdark_radius white nicdark_margin20"> 		<div id="ovalo" class="margen"></div> </a>
-				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/3.gif" data-agente="Triangulo" data-descripcion="Triangulo" class="formas-geometricas extrasize nicdark_btn nicdark_bg_violet medium nicdark_shadow nicdark_radius white nicdark_margin20"><div id="triangulo" class="margen"></div> </a>
+				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/1.gif" data-agente="Circulo" data-descripcion="Círculo" class="formas-geometricas extrasize nicdark_btn nicdark_bg_green medium nicdark_shadow nicdark_radius white nicdark_margin20"> 	<div id="circulo" class="margen"></div> </a>
+				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/2.gif" data-agente="Ovalo" data-descripcion="Óvalo" class="formas-geometricas extrasize nicdark_btn nicdark_bg_blue medium nicdark_shadow nicdark_radius white nicdark_margin20"> 		<div id="ovalo" class="margen"></div> </a>
+				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/3.gif" data-agente="Triangulo" data-descripcion="Triángulo" class="formas-geometricas extrasize nicdark_btn nicdark_bg_violet medium nicdark_shadow nicdark_radius white nicdark_margin20"><div id="triangulo" class="margen"></div> </a>
 				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/4.gif" data-agente="Cuadrado" data-descripcion="Cuadrado" class="formas-geometricas extrasize nicdark_btn nicdark_bg_red medium nicdark_shadow nicdark_radius white nicdark_margin20">	<div id="cuadrado" class="margen"></div> </a>
 				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/5.gif" data-agente="Rectangulo" data-descripcion="Rectangulo" class="formas-geometricas extrasize nicdark_btn nicdark_bg_green medium nicdark_shadow nicdark_radius white nicdark_margin20"><div id="rectangulo" class="margen"></div> </a>
 				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/6.gif" data-agente="Rombo" data-descripcion="Rombo" class="formas-geometricas extrasize nicdark_btn nicdark_bg_blue medium nicdark_shadow nicdark_radius white nicdark_margin20">		<div id="rombo" class="margen"></div> </a>
-				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/7.gif" data-agente="Pentagono" data-descripcion="Pentagono" class="formas-geometricas extrasize nicdark_btn nicdark_bg_violet medium nicdark_shadow nicdark_radius white nicdark_margin20"><div id="pentagono" class="margen"></div> </a>
-				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/8.gif" data-agente="Hexagono" data-descripcion="Hexagono" class="formas-geometricas extrasize  nicdark_btn nicdark_bg_red medium nicdark_shadow nicdark_radius white nicdark_margin20">	<div id="hexagono" class="margen"></div> </a>
+				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/7.gif" data-agente="Pentagono" data-descripcion="Pentágono" class="formas-geometricas extrasize nicdark_btn nicdark_bg_violet medium nicdark_shadow nicdark_radius white nicdark_margin20"><div id="pentagono" class="margen"></div> </a>
+				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/8.gif" data-agente="Hexagono" data-descripcion="Hexágono" class="formas-geometricas extrasize  nicdark_btn nicdark_bg_red medium nicdark_shadow nicdark_radius white nicdark_margin20">	<div id="hexagono" class="margen"></div> </a>
 				<a href="javascript:void(0)" data-imagen="/images/primer-grado/formas-geometricas/9.gif" data-agente="Octagono" data-descripcion="Octágono" class="formas-geometricas extrasize nicdark_btn nicdark_bg_green medium nicdark_shadow nicdark_radius white nicdark_margin20">	<div id="octagono" class="margen"></div> </a>
 			</div>			
 		</div>

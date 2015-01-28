@@ -19,7 +19,7 @@
 				<div class="nicdark_space100"></div>
 				<h1 class="white subtitle">TERCER GRADO</h1>
 				<div class="nicdark_space10"></div>
-				<h3 class="subtitle white">SILABAS</h3>
+				<h3 class="subtitle white">SÍLABAS</h3>
 				<div class="nicdark_space20"></div>
 				<div class="nicdark_divider left big"><span class="nicdark_bg_white nicdark_radius"></span></div>
 				<div class="nicdark_space40"></div>
@@ -46,7 +46,7 @@
 
 			<div class="nicdark_space50"></div>
 
-			<h1 class="subtitle greydark">Separa en Silabas:</h1>
+			<h1 class="subtitle greydark">Separa en Sílabas:</h1>
 			<div class="nicdark_space20"></div>
 			<div class="nicdark_divider left small"><span class="nicdark_bg_yellow nicdark_radius"></span></div>
 			<div class="nicdark_space20"></div>
@@ -58,26 +58,26 @@
 					<table class="nicdark_table extrabig nicdark_bg_blue nicdark_radius ">
 						<thead class="nicdark_border_blue">
 							<tr>
-								<td><h4 class="white">Categorias de silabas:</h4></td>
+								<td><h4 class="white">Categorías de sílabas:</h4></td>
 								<td class="nicdark_width_percentage1"></td>
 							</tr>
 						</thead>
 						<tbody class="nicdark_bg_grey nicdark_border_grey">
 							<tr>
-								<td><p><strong>Monosilaba:</strong>&nbsp;&nbsp;&nbsp; 1 silaba &nbsp;&nbsp;&nbsp;<strong>PEZ</strong><strong style="float:right">PEZ</strong></p></td>
+								<td><p><strong>Monosílaba:</strong>&nbsp;&nbsp;&nbsp; 1 sílaba &nbsp;&nbsp;&nbsp;<strong>PEZ</strong><strong style="float:right">PEZ</strong></p></td>
 								<td><a href="#" class="nicdark_btn_icon nicdark_bg_green small nicdark_radius_circle white"><i class="icon-ok-outline"></i></a></td>
 							</tr>
 							<tr>
-								<td><p><strong>Bisilaba:</strong>&nbsp;&nbsp;&nbsp; 2 silabas &nbsp;&nbsp;&nbsp;<strong>RELOJ</strong> <strong style="float:right">RE-LOJ</strong> </p> </td>
+								<td><p><strong>Bisílaba:</strong>&nbsp;&nbsp;&nbsp; 2 sílabas &nbsp;&nbsp;&nbsp;<strong>RELOJ</strong> <strong style="float:right">RE-LOJ</strong> </p> </td>
 								<td><a href="#" class="nicdark_btn_icon nicdark_bg_green small nicdark_radius_circle white"><i class="icon-ok-outline"></i></a></td>
 							</tr>
 							<tr>
-								<td><p><strong>Trisilaba:</strong>&nbsp;&nbsp;&nbsp; 3 silabas &nbsp;&nbsp;&nbsp;<strong>PARAGUAS</strong> <strong style="float:right">PA-RA-GUAS</strong> </p> </td>
+								<td><p><strong>Trisílaba:</strong>&nbsp;&nbsp;&nbsp; 3 sílabas &nbsp;&nbsp;&nbsp;<strong>PARAGUAS</strong> <strong style="float:right">PA-RA-GUAS</strong> </p> </td>
 								<td><a href="#" class="nicdark_btn_icon nicdark_bg_green small nicdark_radius_circle white"><i class="icon-ok-outline"></i></a></td>
 							</tr>
 
 							<tr>
-								<td><p><strong>Polisilaba:</strong>&nbsp;&nbsp;&nbsp; 4 silabas &nbsp;&nbsp;&nbsp;<strong>MARIPOSA</strong> <strong style="float:right">MA-RI-PO-SA</strong> </p> </td>
+								<td><p><strong>Polisílaba:</strong>&nbsp;&nbsp;&nbsp; 4 sílabas &nbsp;&nbsp;&nbsp;<strong>MARIPOSA</strong> <strong style="float:right">MA-RI-PO-SA</strong> </p> </td>
 								<td><a href="#" class="nicdark_btn_icon nicdark_bg_green small nicdark_radius_circle white"><i class="icon-ok-outline"></i></a></td>
 							</tr>
 

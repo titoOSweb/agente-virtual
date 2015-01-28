@@ -45,7 +45,7 @@ dd {
 				<div class="nicdark_space100"></div>
 				<h1 class="white subtitle">PRIMER GRADO</h1>
 				<div class="nicdark_space10"></div>
-				<h3 class="subtitle white">FIGURAS MAS LETRAS</h3>
+				<h3 class="subtitle white">FIGURAS MÁS LETRAS</h3>
 				<div class="nicdark_space20"></div>
 				<div class="nicdark_divider left big"><span class="nicdark_bg_white nicdark_radius"></span></div>
 				<div class="nicdark_space40"></div>

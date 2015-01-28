@@ -52,7 +52,7 @@ dd {
 				<div class="nicdark_space100"></div>
 				<h1 class="white subtitle">SEGUNDO GRADO</h1>
 				<div class="nicdark_space10"></div>
-				<h3 class="subtitle white">ARRASTRA LOS NUMEROS</h3>
+				<h3 class="subtitle white">ARRASTRA LOS NÚMEROS</h3>
 				<div class="nicdark_space20"></div>
 				<div class="nicdark_divider left big"><span class="nicdark_bg_white nicdark_radius"></span></div>
 				<div class="nicdark_space40"></div>
@@ -78,7 +78,7 @@ dd {
 		<div class="grid grid_8">
 			<div class="nicdark_space50"></div>
 
-			<h1 class="subtitle greydark">Numeros mayores a: <strong id="limite"></strong></h1>
+			<h1 class="subtitle greydark">Números mayores a: <strong id="limite"></strong></h1>
 			<div class="nicdark_space20"></div>
 			<div class="nicdark_divider left small"><span class="nicdark_bg_yellow nicdark_radius"></span></div>
 			<div class="nicdark_space20"></div>
